@@ -1,0 +1,63 @@
+site_name: Let Us Python Book
+site_url: https://Joseph1997-eng.github.io/Let-Us-Python-Book-/
+repo_url: https://github.com/Joseph1997-eng/Let-Us-Python-Book-
+repo_name: Let-Us-Python-Book-
+
+# Modern Configuration
+theme:
+  name: material
+  language: en
+  font:
+    text: Roboto
+    code: JetBrains Mono
+  
+  # Color Palette (Dark/Light Mode Toggle ပါဝင်သည်)
+  palette: 
+    # Light Mode Setup
+    - scheme: default
+      primary: teal 
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark Mode Setup (Modern Slate Theme)
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  # Modern UI Features
+  features:
+    - navigation.instant     # Instant loading (SPA feel)
+    - navigation.tracking    # URL tracking
+    - navigation.tabs        # အပေါ်ဘက်တွင် Tab များဖြင့် ပြခြင်း (အဓိက Modern ဖြစ်စေသည့်အချက်)
+    - navigation.sections    # ဘေးဘက် Menu ကို အုပ်စုလိုက်ခွဲပြခြင်း
+    - navigation.top         # 'Back to Top' button ထည့်ခြင်း
+    - search.suggest         # ရှာဖွေရာတွင် စာလုံးအကြံပြုခြင်း
+    - search.highlight       # ရှာတွေ့သည့်စာလုံးကို Highlight လုပ်ခြင်း
+    - content.code.copy      # Code block များကို Copy ကူးရန် ခလုတ်ထည့်ခြင်း
+    - toc.follow             # စာဖတ်နေသည့်နေရာကို ဘေးဘက်တွင် လိုက်ပြခြင်း
+
+extra_css:
+  - stylesheets/extra.css
+
+# Markdown Extensions (Code များလှပစေရန်)
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - attr_list
+
+# Navigation (ဖိုင်တည်နေရာများ ချိတ်ဆက်ခြင်း)
+nav:
+  - Home: index.md
+  - Chapters:
+    - 'Chapter 27: Numpy Library': Chapter 27.md

@@ -1,0 +1,36 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--md-default-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--md-primary-fg-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--md-accent-fg-color);
+}
+
+/* Smooth Transitions */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Code Block Enhancements */
+.md-typeset pre > code {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Admonition Styling */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
