@@ -21,7 +21,7 @@ This book covers a wide range of topics, ensuring a solid foundation and advance
 
 Explore the chapters available in this documentation:
 
-*   [**Chapter 27: Numpy Library**](Chapters/Chapter%2027.md)
+*   [**Chapter 27: Numpy Library**](Chapter%2027.md)
     *   *Introduction to NumPy, Arrays, Indexing, and Operations.*
 
 *(More chapters coming soon...)*
