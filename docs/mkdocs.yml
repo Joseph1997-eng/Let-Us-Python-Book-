@@ -59,5 +59,15 @@ markdown_extensions:
 # Navigation (ဖိုင်တည်နေရာများ ချိတ်ဆက်ခြင်း)
 nav:
   - Home: index.md
-  - Chapters:
-    - 'Chapter 27: Numpy Library': Chapter 27.md
+  
+  # Multilingual Documentation
+  - '🌍 Languages':
+    - '🇬🇧 English':
+      - 'Home (English)': index.eng.md
+      - 'Chapter 27 (English)': Chapter 27.eng.md
+    - '🇲🇲 Myanmar':
+      - 'Home (မြန်မာ)': index.mm.md
+      - 'Chapter 27 (မြန်မာ)': Chapter 27.mm.md
+    - '🇮🇳 Hakha Chin':
+      - 'Home (Hakha)': index.hk.md
+      - 'Chapter 27 (Hakha)': Chapter 27.hk.md

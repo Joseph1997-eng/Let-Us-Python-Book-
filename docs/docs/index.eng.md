@@ -12,39 +12,6 @@ Whether you're taking your first steps in programming or looking to deepen your 
 
 ---
 
-## 🌍 Multilingual Support
-
-This documentation is now available in **three languages**, making Python learning accessible to a broader audience:
-
-| Language | File | Description |
-|----------|------|-------------|
-| 🇬🇧 **English** | `index.eng.md` | Complete English documentation |
-| 🇲🇲 **Myanmar (Burmese)** | `index.mm.md` | Myanmar language documentation (မြန်မာဘာသာ) |
-| 🇮🇳 **Hakha Chin** | `index.hk.md` | Hakha Chin language documentation |
-
-### How to Use Different Language Versions
-
-#### Online Documentation
-When viewing the online documentation at [https://Joseph1997-eng.github.io/Let-Us-Python-Book-/](https://Joseph1997-eng.github.io/Let-Us-Python-Book-/), you can access different language versions through the navigation menu or by directly accessing:
-
-- English: `index.eng.md`
-- Myanmar: `index.mm.md`
-- Hakha Chin: `index.hk.md`
-
-#### Local Documentation
-When running the documentation locally with `mkdocs serve`, navigate to the respective language files in the `docs/` directory to view content in your preferred language.
-
-#### Chapter Content
-Currently, **Chapter 27** is available in all three languages:
-- `Chapter 27.eng.md` (English)
-- `Chapter 27.mm.md` (Myanmar)
-- `Chapter 27.hk.md` (Hakha Chin)
-
-> [!NOTE]
-> More chapters will be progressively translated into all three languages. Stay tuned for updates!
-
----
-
 ## 🚀 What You Will Learn
 
 This comprehensive guide covers everything from fundamentals to advanced concepts:
