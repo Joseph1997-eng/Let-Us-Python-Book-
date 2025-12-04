@@ -2,10 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://Joseph1997-eng.github.io/Let-Us-Python-Book-/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <lastmod>2025-12-04</lastmod>
     </url>
     <url>
-         <loc>https://Joseph1997-eng.github.io/Let-Us-Python-Book-/Chapter%2027/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <loc>https://Joseph1997-eng.github.io/Let-Us-Python-Book-/Chapter%2027.eng/</loc>
+         <lastmod>2025-12-04</lastmod>
+    </url>
+    <url>
+         <loc>https://Joseph1997-eng.github.io/Let-Us-Python-Book-/Chapter%2027.hk/</loc>
+         <lastmod>2025-12-04</lastmod>
+    </url>
+    <url>
+         <loc>https://Joseph1997-eng.github.io/Let-Us-Python-Book-/Chapter%2027.mm/</loc>
+         <lastmod>2025-12-04</lastmod>
+    </url>
+    <url>
+         <loc>https://Joseph1997-eng.github.io/Let-Us-Python-Book-/index.eng/</loc>
+         <lastmod>2025-12-04</lastmod>
+    </url>
+    <url>
+         <loc>https://Joseph1997-eng.github.io/Let-Us-Python-Book-/index.hk/</loc>
+         <lastmod>2025-12-04</lastmod>
+    </url>
+    <url>
+         <loc>https://Joseph1997-eng.github.io/Let-Us-Python-Book-/index.mm/</loc>
+         <lastmod>2025-12-04</lastmod>
     </url>
 </urlset>
