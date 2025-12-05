@@ -1,0 +1,2268 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Professional Python programming documentation with multilingual support">
+      
+      
+        <meta name="author" content="Joseph">
+      
+      
+        <link rel="canonical" href="https://Joseph1997-eng.github.io/Let-Us-Python-Book-/mm/chapter-27.mm/">
+      
+      
+        <link rel="prev" href="../../index.mm/">
+      
+      
+        <link rel="next" href="../../index.hk/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../joseph.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Chapter 27 - Let Us Python Book</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/social-card.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-27-numpy-library" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Let Us Python Book" class="md-header__button md-logo" aria-label="Let Us Python Book" data-md-component="logo">
+      
+  <img src="../../joseph.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Let Us Python Book
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 27
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Joseph1997-eng/Let-Us-Python-Book-" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Let-Us-Python-Book-
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../index.eng/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🇬🇧 English
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../index.mm/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🇲🇲 Myanmar
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../index.hk/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🦜 Hakha Chin
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../print_page/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Print this page
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Let Us Python Book" class="md-nav__button md-logo" aria-label="Let Us Python Book" data-md-component="logo">
+      
+  <img src="../../joseph.png" alt="logo">
+
+    </a>
+    Let Us Python Book
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Joseph1997-eng/Let-Us-Python-Book-" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Let-Us-Python-Book-
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇬🇧 English
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🇬🇧 English
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.eng/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eng/chapter-27.eng/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇲🇲 Myanmar
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🇲🇲 Myanmar
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.mm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 27
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#keynote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keynote
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-numpy-numerical-python-library-multidimensional-array-object-array-method-logic-inputoutput-statistical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        - NumPy ဆိုတာကတော့ Numerical Python ရဲ့ အတိုကောက်ဖြစ်ပြီး သိပ္ပံနဲ့ အင်ဂျင်နီယာပိုင်းဆိုင်ရာ ပြဿနာတွေကို ဖြေရှင်းတဲ့နေရာမှာ လူသုံးများတဲ့ Library တစ်ခုဖြစ်ပါတယ်။ သူက စွမ်းဆောင်ရည်မြင့်မားတဲ့ Multidimensional array object (ရှုထောင့်စုံ ဇယားကွက်) တွေနဲ့ အဲဒီ array တွေအပေါ်မှာ မြန်ဆန်သွက်လက်စွာ တွက်ချက်နိုင်မယ့် Method တွေကို ပံ့ပိုးပေးထားပါတယ်။ ဒီလိုလုပ်ဆောင်နိုင်တဲ့ လုပ်ငန်းစဉ်တွေထဲမှာ သင်္ချာဆိုင်ရာ၊ ယုတ္တိဗေဒ (Logic) ပိုင်း၊ ပုံသဏ္ဍာန် ပြုပြင်ပြောင်းလဲတာ၊ အစီအစဉ်ချတာ၊ ရွေးထုတ်တာ၊ Input/Output ကိစ္စတွေနဲ့ စာရင်းအင်း (Statistical) ပိုင်းဆိုင်ရာ တွက်ချက်မှုတွေ စသည်ဖြင့် ပါဝင်ပါတယ်။
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#271-creation-of-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.1 Creation of Array
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#272-creation-of-filler-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.2 Creation of Filler Arrays
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#273-array-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.3 Array Attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#274-array-operations-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4 Array Operations (Array ဆိုင်ရာ လုပ်ဆောင်ချက်များ)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="27.4 Array Operations (Array ဆိုင်ရာ လုပ်ဆောင်ချက်များ)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2741-arithmetic-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.1 Arithmetic Operations (သင်္ချာဆိုင်ရာ တွက်ချက်မှုများ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2742-statistical-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.2 Statistical Operations (စာရင်းအင်းဆိုင်ရာ တွက်ချက်မှုများ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2743-linear-algebra-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.3 Linear Algebra Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2744-bitwise-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.4 Bitwise Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2745-copying-and-sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.5 Copying and Sorting (ကူးယူခြင်းနှင့် အစီအစဉ်ချခြင်း)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2746-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.6 Comparison (နှိုင်းယှဉ်ခြင်းများ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2747-indexing-and-slicing-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.7 Indexing and Slicing (Array ခန်းများ ညွှန်းဆိုခြင်းနှင့် အပိုင်းဖြတ်ခြင်း)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#275-array-manipulation-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.5 Array Manipulation (Array များကို ပုံစံပြောင်းလဲ ကိုင်တွယ်ခြင်း)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-271" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 27.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-272" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 27.2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-273" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 27.3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-274" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 27.4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🦜 Hakha Chin
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🦜 Hakha Chin
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.hk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hk/chapter-27.hk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print this page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#keynote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keynote
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-numpy-numerical-python-library-multidimensional-array-object-array-method-logic-inputoutput-statistical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        - NumPy ဆိုတာကတော့ Numerical Python ရဲ့ အတိုကောက်ဖြစ်ပြီး သိပ္ပံနဲ့ အင်ဂျင်နီယာပိုင်းဆိုင်ရာ ပြဿနာတွေကို ဖြေရှင်းတဲ့နေရာမှာ လူသုံးများတဲ့ Library တစ်ခုဖြစ်ပါတယ်။ သူက စွမ်းဆောင်ရည်မြင့်မားတဲ့ Multidimensional array object (ရှုထောင့်စုံ ဇယားကွက်) တွေနဲ့ အဲဒီ array တွေအပေါ်မှာ မြန်ဆန်သွက်လက်စွာ တွက်ချက်နိုင်မယ့် Method တွေကို ပံ့ပိုးပေးထားပါတယ်။ ဒီလိုလုပ်ဆောင်နိုင်တဲ့ လုပ်ငန်းစဉ်တွေထဲမှာ သင်္ချာဆိုင်ရာ၊ ယုတ္တိဗေဒ (Logic) ပိုင်း၊ ပုံသဏ္ဍာန် ပြုပြင်ပြောင်းလဲတာ၊ အစီအစဉ်ချတာ၊ ရွေးထုတ်တာ၊ Input/Output ကိစ္စတွေနဲ့ စာရင်းအင်း (Statistical) ပိုင်းဆိုင်ရာ တွက်ချက်မှုတွေ စသည်ဖြင့် ပါဝင်ပါတယ်။
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#271-creation-of-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.1 Creation of Array
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#272-creation-of-filler-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.2 Creation of Filler Arrays
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#273-array-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.3 Array Attributes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#274-array-operations-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4 Array Operations (Array ဆိုင်ရာ လုပ်ဆောင်ချက်များ)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="27.4 Array Operations (Array ဆိုင်ရာ လုပ်ဆောင်ချက်များ)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2741-arithmetic-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.1 Arithmetic Operations (သင်္ချာဆိုင်ရာ တွက်ချက်မှုများ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2742-statistical-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.2 Statistical Operations (စာရင်းအင်းဆိုင်ရာ တွက်ချက်မှုများ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2743-linear-algebra-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.3 Linear Algebra Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2744-bitwise-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.4 Bitwise Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2745-copying-and-sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.5 Copying and Sorting (ကူးယူခြင်းနှင့် အစီအစဉ်ချခြင်း)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2746-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.6 Comparison (နှိုင်းယှဉ်ခြင်းများ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2747-indexing-and-slicing-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.4.7 Indexing and Slicing (Array ခန်းများ ညွှန်းဆိုခြင်းနှင့် အပိုင်းဖြတ်ခြင်း)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#275-array-manipulation-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        27.5 Array Manipulation (Array များကို ပုံစံပြောင်းလဲ ကိုင်တွယ်ခြင်း)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-271" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 27.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-272" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 27.2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-273" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 27.3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-274" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 27.4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../index.mm/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    🇲🇲 Myanmar
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/Joseph1997-eng/Let-Us-Python-Book-/edit/master/docs/mm/chapter-27.mm.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/Joseph1997-eng/Let-Us-Python-Book-/raw/master/docs/mm/chapter-27.mm.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="chapter-27-numpy-library">Chapter 27 Numpy Library<a class="headerlink" href="#chapter-27-numpy-library" title="Permanent link">&para;</a></h1>
+<div class="chapter-social-card">
+  <div class="chapter-info">
+    <div class="chapter-number">CHAPTER 27</div>
+    <h1 class="chapter-title">NumPy Library</h1>
+  </div>
+  <div class="chapter-logo">
+    <img src="/Let-Us-Python-Book-/Logo.png" alt="Joseph Logo">
+  </div>
+  <div class="chapter-social-links">
+    <a href="https://github.com/Joseph1997-eng" target="_blank" class="social-icon" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/robinson-joseph-61734a17a/" target="_blank" class="social-icon" title="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/josephsaimonn" target="_blank" class="social-icon" title="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<h2 id="keynote">Keynote<a class="headerlink" href="#keynote" title="Permanent link">&para;</a></h2>
+<h2 id="-numpy-numerical-python-library-multidimensional-array-object-array-method-logic-inputoutput-statistical">- NumPy ဆိုတာကတော့ Numerical Python ရဲ့ အတိုကောက်ဖြစ်ပြီး သိပ္ပံနဲ့ အင်ဂျင်နီယာပိုင်းဆိုင်ရာ ပြဿနာတွေကို ဖြေရှင်းတဲ့နေရာမှာ လူသုံးများတဲ့ Library တစ်ခုဖြစ်ပါတယ်။ သူက စွမ်းဆောင်ရည်မြင့်မားတဲ့ Multidimensional array object (ရှုထောင့်စုံ ဇယားကွက်) တွေနဲ့ အဲဒီ array တွေအပေါ်မှာ မြန်ဆန်သွက်လက်စွာ တွက်ချက်နိုင်မယ့် Method တွေကို ပံ့ပိုးပေးထားပါတယ်။ ဒီလိုလုပ်ဆောင်နိုင်တဲ့ လုပ်ငန်းစဉ်တွေထဲမှာ သင်္ချာဆိုင်ရာ၊ ယုတ္တိဗေဒ (Logic) ပိုင်း၊ ပုံသဏ္ဍာန် ပြုပြင်ပြောင်းလဲတာ၊ အစီအစဉ်ချတာ၊ ရွေးထုတ်တာ၊ Input/Output ကိစ္စတွေနဲ့ စာရင်းအင်း (Statistical) ပိုင်းဆိုင်ရာ တွက်ချက်မှုတွေ စသည်ဖြင့် ပါဝင်ပါတယ်။<a class="headerlink" href="#-numpy-numerical-python-library-multidimensional-array-object-array-method-logic-inputoutput-statistical" title="Permanent link">&para;</a></h2>
+<h2 id="271-creation-of-array">27.1 Creation of Array<a class="headerlink" href="#271-creation-of-array" title="Permanent link">&para;</a></h2>
+<ul>
+<li>NumPy Library ကို အသုံးပြုချင်တယ်ဆိုရင်တော့ အောက်မှာပြထားတဲ့အတိုင်း အရင်ဆုံး download ဆွဲပြီး install လုပ်ထားဖို့ လိုပါမယ်။
+<div class="language-Bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>numpy
+</span></code></pre></div></li>
+<li>NumPy Array တွေက ပုံစံကြည့်လိုက်ရင် Python List တွေနဲ့ တူသလိုလိုရှိပေမယ့်၊ တကယ်တမ်းကျတော့ List တွေထက် ပိုပြီး မြန်မြန်ဆန်ဆန် အလုပ်လုပ်နိုင်အောင် ဖန်တီးထားတာဖြစ်ပါတယ်။</li>
+<li>List တွေနဲ့ မတူတဲ့အချက်ကတော့ NumPy array တစ်ခုထဲမှာပါတဲ့ element တွေအားလုံးဟာ data type အမျိုးအစား တူညီနေဖို့ လိုပါတယ်။</li>
+<li>NumPy array တစ်ခု တည်ဆောက်ချင်ရင် np.array() function ကို သုံးရမှာဖြစ်ပြီး၊ အောက်ပါနမူနာအတိုင်း ကိန်းဂဏန်း list တစ်ခုကို ထည့်ပေးရပါမယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">intarr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span> <span class="c1"># ကိန်းပြည့် (ints) array တစ်ခု တည်ဆောက်ခြင်း</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">floattarr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.1</span><span class="p">,</span><span class="mf">2.2</span><span class="p">,</span><span class="mf">3.3</span><span class="p">,</span><span class="mf">4.4</span><span class="p">])</span> <span class="c1"># ဒသမကိန်း (floats) array တစ်ခု တည်ဆောက်ခြင်း</span>
+</span></code></pre></div></li>
+<li>တကယ်လို့ ကိန်းပြည့် (ints) တွေနဲ့ ဒသမကိန်း (floats) တွေကို ရောရေးလိုက်မယ်ဆိုရင် NumPy က အားလုံးကို floats အဖြစ် အလိုအလျောက် ပြောင်းလဲသတ်မှတ်လိုက်မှာ ဖြစ်ပါတယ်။</li>
+<li>Array တည်ဆောက်တဲ့အချိန်မှာ element တွေရဲ့ type ကို သီးခြား မသတ်မှတ်ပေးထားဘူးဆိုရင် NumPy က ပေးထားတဲ့ တန်ဖိုးတွေကိုကြည့်ပြီး type ကို ခန့်မှန်းပေးပါတယ်။ တကယ်လို့ ကိုယ်တိုင် type သတ်မှတ်ချင်တယ်ဆိုရင်လည်း အခုလို သတ်မှတ်ပေးလို့ ရပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">intarr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="nb">int</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">floatarr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.1</span><span class="p">,</span><span class="mf">2.2</span><span class="p">,</span><span class="mf">3.3</span><span class="p">,</span><span class="mf">4.4</span><span class="p">],</span> <span class="nb">float</span><span class="p">)</span>
+</span></code></pre></div></li>
+<li>2D array (matrix) ဆိုတာက 1D array တွေကို စုစည်းထားတာဖြစ်ပြီး၊ 3D array ဆိုတာကတော့ 2D array တွေကို ထပ်ပြီး စုစည်းထားတာ ဖြစ်ပါတယ်။ သူတို့ကို အောက်ပါအတိုင်း တည်ဆောက်နိုင်ပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span> <span class="c1"># 2 rows x 3 columns ရှိတဲ့ array</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]],[[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]]])</span> <span class="c1"># 2x2 အရွယ်အစားရှိတဲ့ array ၂ ခုပါဝင်တဲ့ 3D array</span>
+</span></code></pre></div></li>
+<li>Complex number (ကိန်းရော) တွေပါဝင်တဲ့ array တွေကိုလည်း တည်ဆောက်နိုင်ပါသေးတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]],</span> <span class="nb">complex</span><span class="p">)</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="272-creation-of-filler-arrays">27.2 Creation of Filler Arrays<a class="headerlink" href="#272-creation-of-filler-arrays" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>နောက်မှ တန်ဖိုးအစစ်တွေ အစားထိုးထည့်မယ့် နေရာဦးထားတဲ့ (initial placeholder) တန်ဖိုးတွေပါတဲ့ NumPy Array တွေကို ကြိုတင်တည်ဆောက်ထားလို့ ရပါတယ်။</p>
+</li>
+<li>
+<p>ဥပမာ - 0 တွေချည်းပဲပါတာ၊ 1 တွေချည်းပဲပါတာ၊ ဒါမှမဟုတ် ကိုယ်လိုချင်တဲ့ ဂဏန်းသေချာသတ်မှတ်ပြီး ဖြည့်ထားတဲ့ array မျိုးတွေ ဖန်တီးနိုင်တယ်။ ဘာတန်ဖိုးမှန်းမသိတဲ့ (garbage values) တွေပါနေတဲ့ empty array မျိုးကိုလည်း ဖန်တီးလို့ရပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>  <span class="c1"># garbage values တွေပါတဲ့ 2D array တစ်ခု</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>  <span class="c1"># သုည (0) တွေချည်းပဲပါတဲ့ 2D array</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">a3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>   <span class="c1"># တစ် (1) တွေချည်းပဲပါတဲ့ 2D array</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">a4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="mi">7</span><span class="p">)</span> <span class="c1"># တန်ဖိုးအားလုံး 7 ဖြစ်နေတဲ့ 2D array</span>
+</span></code></pre></div>
+သတိပြုရန် - ဒီ function တွေထဲကို တန်ဖိုးထည့်တဲ့အခါ Tuple ပုံစံနဲ့ ထည့်ပေးရပါမယ်။ (3,4) တို့ (2,2) တို့ဆိုတာ ကိုယ်တည်ဆောက်ချင်တဲ့ array ရဲ့ ပုံသဏ္ဍာန် (Shape) ကို ညွှန်းဆိုတာ ဖြစ်ပါတယ်။</p>
+</li>
+<li>
+<p>Random တန်ဖိုးတွေနဲ့ဖြစ်ဖြစ်၊ အကွာအဝေး ညီတူညီမျှခြားထားတဲ့ တန်ဖိုးတွေနဲ့ဖြစ်ဖြစ် array တွေကို တည်ဆောက်နိုင်ပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">4</span><span class="p">))</span>   <span class="c1"># random တန်ဖိုး ၄ ခုပါတဲ့ array</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>            <span class="c1"># [0,1,2,3,4] ကို ဖန်တီးပေးတယ် (မူရင်းစာ text တွင် np.range ဟုပါသော်လည်း np.arange သာ အမှန်ဖြစ်သည်)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">a3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>      <span class="c1"># [0.0 0.5 1.0 1.5 2.0] ကို ဖန်တီးပေးတယ်</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><em>arange()</em> နဲ့ <em>linspace()</em> ရဲ့ ပထမ ကိန်းဂဏန်းနှစ်လုံး (parameters) က အစတန်ဖိုးနဲ့ အဆုံးတန်ဖိုးကို ညွှန်းတာပါ။ တတိယ parameter မှာကျတော့ <em>arange()</em> အတွက်ဆိုရင် ဘယ်လောက်စီ ခြားမလဲဆိုတဲ့ step value ဖြစ်ပြီး၊ <em>linspace()</em> အတွက်ဆိုရင်တော့ တန်ဖိုးစုစုပေါင်း ဘယ်နှလုံး လိုချင်တာလဲ ဆိုတာကို ညွှန်းတာဖြစ်ပါတယ်။</p>
+</li>
+<li>
+<p>NumPy ကနေ Identity Matrix ကိုလည်း ဖန်တီးခွင့်ပေးထားပါတယ်။ Identity Matrix ဆိုတာက ထောင့်ဖြတ်မျဉ်း (principal diagonal) ပေါ်မှာ 1 တွေရှိပြီး ကျန်တဲ့နေရာတွေမှာ 0 ဖြစ်နေတဲ့ Matrix မျိုးပါ။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">identity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></code></pre></div></p>
+</li>
+<li>Identity matrix ဆိုတာ အနားညီစတုရန်း (Square) matrix ဖြစ်တဲ့အတွက် eye() နဲ့ identity() ကို သုံးတဲ့အခါ dimension တစ်ခုပဲ (ဂဏန်းတစ်လုံးပဲ) ထည့်ပေးဖို့ လိုပါတယ်။</li>
+</ul>
+<hr />
+<h2 id="273-array-attributes">27.3 Array Attributes<a class="headerlink" href="#273-array-attributes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>NumPy array တွေမှာ သူ့ရဲ့ element အမျိုးအစား (type)၊ အရွယ်အစား (size)၊ ပုံသဏ္ဍာန် (shape) စတာတွေကို ဖော်ပြပေးနိုင်တဲ့ attribute တွေ အများကြီး ပါဝင်ပါတယ်။</p>
+</li>
+<li>
+<p>Array ထဲမှာ ဘာ data type တွေပါလဲ၊ size ဘယ်လောက်ရှိလဲ၊ memory ရဲ့ ဘယ်နေရာမှာ သိမ်းထားလဲ ဆိုတာတွေကို အောက်ပါအတိုင်း လှမ်းကြည့်လို့ရပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.1</span><span class="p">,</span><span class="mf">2.2</span><span class="p">,</span><span class="mf">3.3</span><span class="p">,</span><span class="mf">4.4</span><span class="p">])</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>                 <span class="c1"># int32 လို့ ထွက်လာမယ် (Integer type မို့လို့ပါ)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>                 <span class="c1"># float64 လို့ ထွက်လာမယ် (Float type မို့လို့ပါ)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">itemsize</span><span class="p">)</span>              <span class="c1"># 4 လို့ ပြမယ် (bytes)</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="o">.</span><span class="n">itemsize</span><span class="p">)</span>              <span class="c1"># 8 လို့ ပြမယ် (bytes)</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">nbytes</span><span class="p">)</span>                <span class="c1"># 16 (စုစုပေါင်း bytes)</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="o">.</span><span class="n">nbytes</span><span class="p">)</span>                <span class="c1"># 32 (မူရင်းစာ text တွင် 16 ဟုပါသော်လည်း float64 သည် 8 bytes x 4 elements ဖြစ်၍ 32 bytes ဖြစ်သင့်သည်)</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>                  <span class="c1"># Memory address ကို ပြပါလိမ့်မယ် (ဥပမာ &lt;memory at ...&gt;)</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">strides</span><span class="p">)</span>               <span class="c1"># (4,) လို့ ပြမယ်</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>                  <span class="c1"># Memory address ကို ပြပါလိမ့်မယ်</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="o">.</span><span class="n">strides</span><span class="p">)</span>               <span class="c1"># (8,) လို့ ပြမယ်</span>
+</span></code></pre></div></p>
+</li>
+<li>ဒီမှာဆိုရင် <em>dtype</em> က array ထဲမှာပါတဲ့ element အမျိုးအစားကို ပြပေးတာပါ။ Element တစ်လုံးချင်းစီက နေရာဘယ်လောက်ယူလဲဆိုတာကို <em>itemsize</em> နဲ့ ကြည့်နိုင်ပြီး၊ Array တစ်ခုလုံးအနေနဲ့ နေရာဘယ်လောက်ယူလဲ ဆိုတာကိုတော့ nbytes နဲ့ ကြည့်နိုင်ပါတယ်။</li>
+<li><em>data</em> ဆိုတာက memory ပေါ်မှာ array စတင်သိမ်းဆည်းထားတဲ့ လိပ်စာ (Base Address) ကို ပြပေးတာဖြစ်ပြီး၊ <em>strides</em> ကတော့ နောက်ထပ် element တစ်ခုဆီ ရောက်ဖို့အတွက် base address ကနေ byte ဘယ်လောက် ထပ်ပေါင်းထည့်ရမလဲ (ဘယ်လောက် ခုန်ကျော်သွားရမလဲ) ဆိုတာကို ညွှန်းပါတယ်။</li>
+<li><em>ndim</em>, <em>shape</em> နဲ့ <em>size attributes</em> တွေကတော့ array ရဲ့ dimension အရေအတွက်၊ array ရဲ့ ပုံသဏ္ဍာန်နဲ့ element စုစုပေါင်း အရေအတွက်တွေကို အသီးသီး ဖော်ပြပေးပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]))</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>                       <span class="c1"># 1 (1D array ဖြစ်လို့)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>                       <span class="c1"># 2 (2D array ဖြစ်လို့)</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>                      <span class="c1"># (4,) (Tuple ပုံစံနဲ့ ပြပါတယ်)</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>                      <span class="c1"># (2,4) (2 rows နဲ့ 4 columns ရှိလို့ပါ)</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>                       <span class="c1"># 4 (element ၄ လုံးရှိလို့)</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>                       <span class="c1"># 8 (element ၈ လုံးရှိလို့)</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="274-array-operations-array">27.4 Array Operations (Array ဆိုင်ရာ လုပ်ဆောင်ချက်များ)<a class="headerlink" href="#274-array-operations-array" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>NumPy Array တွေပေါ်မှာ လုပ်ဆောင်ချက် (Operations) တွေ အများကြီး လုပ်လို့ရပါတယ်။ ဒီ operations တွေက ရေးရတာ ကျစ်လျစ်သလို၊ အလုပ်လုပ်တာလည်း အရမ်းမြန်ပါတယ်။ ဘာလို့ ဒီလောက်မြန်လဲဆိုတော့ ဒီ Library ထဲမှာ ကြိုတင် compile လုပ်ပြီးသား ကုဒ်တွေ (precompiled routines) ပါနေလို့ပဲ ဖြစ်ပါတယ်။</p>
+</li>
+<li>
+<p>Array operations အမျိုးမျိုးရှိတဲ့အထဲမှာ အောက်ပါခေါင်းစဉ်တွေ ပါဝင်ပါတယ် -</p>
+<ul>
+<li>(a) Arithmetic Operations: သင်္ချာဆိုင်ရာ ပေါင်းနှုတ်မြှောက်စား လုပ်ဆောင်ချက်များ</li>
+<li>(b) Statistical Operations: စာရင်းအင်းပိုင်းဆိုင်ရာ တွက်ချက်မှုများ</li>
+<li>&copy; Linear Algebra Operations: Linear Algebra (ရိုးဖြောင့် အက္ခရာသင်္ချာ) ဆိုင်ရာ တွက်ချက်မှုများ</li>
+<li>(d) Bitwise Operations: Bit အလိုက် ကိုင်တွယ်တဲ့ လုပ်ဆောင်ချက်များ</li>
+<li>(e) Copying, Sorting: ကူးယူခြင်း နဲ့ အစီအစဉ်ချခြင်းများ</li>
+<li>(f) Comparison Operations: နှိုင်းယှဉ်ခြင်းဆိုင်ရာ လုပ်ဆောင်ချက်များ</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="2741-arithmetic-operations">27.4.1 Arithmetic Operations (သင်္ချာဆိုင်ရာ တွက်ချက်မှုများ)<a class="headerlink" href="#2741-arithmetic-operations" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Array နှစ်ခုကြားမှာ +, -, *, /, % စတဲ့ သင်္ချာ operator တွေကို အသုံးပြုပြီး တွက်ချက်မှုတွေ အများကြီး လုပ်လို့ရပါတယ်။</p>
+</li>
+<li>
+<p>ဒီ operator တွေကို သုံးလိုက်တဲ့အခါ Array နှစ်ခုရဲ့ သက်ဆိုင်ရာ နေရာတူ element အချင်းချင်း (corresponding elements) ကို တိုက်ရိုက် တွက်ချက်သွားမှာ ဖြစ်ပါတယ်။</p>
+</li>
+<li>
+<p>သင်္ကေတ (operator) တွေ မသုံးချင်ဘူးဆိုရင် <strong>add()</strong>, <strong>subtract()</strong>, <strong>multiply()</strong>, <strong>divide()</strong>, နဲ့ <strong>remainder()</strong> ဆိုတဲ့ function (method) တွေကို ပြောင်းသုံးလို့လည်း ရပါတယ်။ ဒီလို တွက်ချက်တာမျိုးကို Vector operations လို့လည်း ခေါ်ကြပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]])</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">a3</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">+</span> <span class="n">a2</span>                            <span class="c1"># a3 = np.add(a1,a2) နဲ့ အတူတူပါပဲ</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">a4</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">-</span> <span class="n">a2</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="n">a5</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">*</span> <span class="n">a2</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="n">a6</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">/</span> <span class="n">a2</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="n">a7</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">%</span> <span class="n">a2</span> 
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="n">a8</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">**</span> <span class="mi">2</span>                            <span class="c1"># Element တိုင်းကို နှစ်ထပ်ကိန်း တင်လိုက်တာပါ</span>
+</span></code></pre></div></p>
+</li>
+<li>Array ထဲက element တွေကို ကိန်းဂဏန်းတစ်ခုတည်း (Scalar) နဲ့ ပေါင်းနှုတ်မြှောက်စား လုပ်တာမျိုးလည်း လုပ်လို့ရပါသေးတယ်။ (ဥပမာ - Array တစ်ခုလုံးကို 2 နဲ့ လိုက်ပေါင်းတာမျိုးပေါ့)
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]])</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">+</span> <span class="mi">2</span>             <span class="c1"># Element တိုင်းကို 2 ပေါင်းထည့်လိုက်တာ</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">a3</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">**</span> <span class="mi">2</span>            <span class="c1"># Element တိုင်းကို 2 ထပ်ကိန်း တင်လိုက်တာ</span>
+</span></code></pre></div></li>
+<li>+=, -=, /= စတဲ့ In-place operator တွေကို သုံးမယ်ဆိုရင်တော့ Array အသစ်တစ်ခု ထပ်မဆောက်တော့ဘဲ ရှိပြီးသား လက်ရှိ Array ကိုပဲ တိုက်ရိုက် ပြင်ဆင် (Modify) သွားမှာ ဖြစ်ပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">a1</span> <span class="o">+=</span> <span class="n">a2</span> <span class="c1"># a1 = a1 + a2 နဲ့ အတူတူပါပဲ (a1 ရဲ့ တန်ဖိုးကို တိုက်ရိုက်ပြောင်းသွားပါတယ်)</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">a3</span> <span class="o">+=</span> <span class="mi">5</span>  <span class="c1"># a3 = a3 + 5 နဲ့ အတူတူပါပဲ</span>
+</span></code></pre></div></li>
+<li>Array element တွေအပေါ်မှာ တခြားလုပ်ဆောင်နိုင်တဲ့ operation တွေကတော့ <strong>exp()</strong> (ထပ်ကိန်းတင်ခြင်း)၊ <strong>sqrt()</strong> (နှစ်ထပ်ကိန်းရင်းရှာခြင်း)၊ <strong>cos()</strong>, <strong>sin()</strong> (တြီဂိုနိုမေတြီ တွက်ချက်ခြင်း) နဲ့ <strong>log()</strong> (Logarithm တွက်ချက်ခြင်း) စတာတွေပဲ ဖြစ်ပါတယ်။</li>
+</ul>
+<hr />
+<h3 id="2742-statistical-operations">27.4.2 Statistical Operations (စာရင်းအင်းဆိုင်ရာ တွက်ချက်မှုများ)<a class="headerlink" href="#2742-statistical-operations" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>NumPy က Array တစ်ခုလုံးအပေါ်မှာဖြစ်ဖြစ်၊ ကိုယ်လိုချင်တဲ့ Axis (Dimension) တစ်ခုပေါ်မှာ မူတည်ပြီးတော့ဖြစ်ဖြစ် စာရင်းအင်းဆိုင်ရာ တွက်ချက်မှုတွေ (ဥပမာ - ပေါင်းခြင်း၊ အကြီးဆုံးရှာခြင်း) ကို လုပ်ပေးနိုင်ပါတယ်။</p>
+</li>
+<li>
+<p>Axis ဆိုတာ Dimension (အတိုင်းအတာ) ကို ပြောတာပါ။ ဒါကြောင့် 1D array မှာ 1 axis ရှိပြီး၊ 2D array မှာ 2 axes ရှိတယ်လို့ မှတ်သားနိုင်ပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>                      <span class="c1"># Array တစ်ခုလုံးရဲ့ အငယ်ဆုံးတန်ဖိုးကို ရှာမယ်</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">))</span>              <span class="c1"># Column တစ်ခုစီအလိုက် အကြီးဆုံးကို ရှာမယ်</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span>              <span class="c1"># Row တစ်ခုစီအလိုက် အကြီးဆုံးကို ရှာမယ်</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span>              <span class="c1"># Axis 1 (Row) အတိုင်း ပေါင်းမယ်</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span>           <span class="c1"># ဆင့်ပေါင်း (Cumulative sum) ရလဒ်ကို ထုတ်ပေးမယ်</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>                   <span class="c1"># ပျမ်းမျှတန်ဖိုး (Mean)</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>                 <span class="c1"># အလယ်ကိန်း (Median)</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>               <span class="c1"># Correlation Coefficient (ဆက်နွယ်မှု ကိန်းညွှန်း)</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>                    <span class="c1"># Standard Deviation (စံသွေဖည်ကိန်း)</span>
+</span></code></pre></div></p>
+</li>
+<li>ဒီနေရာမှာ max() လို function တွေသုံးရင် Axis သတ်မှတ်ပုံကို သဘောပေါက်ဖို့ အရေးကြီးပါတယ်။ ကျွန်တော်တို့ရဲ့ Array က 2 rows x 3 columns ရှိတဲ့ 2D array ပါ။</li>
+<li>axis = 0 လို့ ပြောလိုက်ရင် "Column အလိုက်ကြည့်မယ်"၊ "Row အလိုက်ကြည့်မယ်" ဆိုပြီး ကျက်မှတ်ထားတာထက် "Collapsing" (ချုံ့ပစ်လိုက်တာ/ဖျောက်လိုက်တာ) ဆိုတဲ့ သဘောတရားနဲ့ မှတ်တာ ပိုမှန်ပါတယ်။</li>
+<li>ဆိုလိုတာက axis = 0 သုံးလိုက်ရင် NumPy က ပထမ Dimension (Size 2 ရှိတဲ့ Row အထပ်လိုက်သဘောတရား) ကို ချုံ့ပစ်လိုက်ပါတယ်။ ဒါကြောင့် ရလဒ်က ကျန်ခဲ့တဲ့ Size 3 အတိုင်း Element ၃ လုံးပါတဲ့ [4,5,6] ဆိုပြီး ထွက်လာတာပါ။</li>
+<li>ဒီသဘောတရားအတိုင်းပဲ axis = 1 သုံးလိုက်ရင် ဒုတိယ Dimension (Size 3 ရှိတဲ့ Column ရေပြင်ညီသဘောတရား) ကို ချုံ့ပစ်လိုက်တဲ့အတွက် [3,6] ဆိုပြီး ရလာတာဖြစ်ပါတယ်။</li>
+</ul>
+<h3 id="2743-linear-algebra-operations">27.4.3 Linear Algebra Operations<a class="headerlink" href="#2743-linear-algebra-operations" title="Permanent link">&para;</a></h3>
+<ul>
+<li>NumPy မှာ မြှောက်လဒ်ရှာတဲ့ Operation နှစ်ခုရဲ့ ကွာခြားချက်ကို သတိထားမှတ်သားဖို့ လိုပါတယ်။* ကိုသုံးရင် နေရာတူတဲ့ ကိန်းဂဏန်းချင်း (Element-wise) မြှောက်တာဖြစ်ပြီး၊@ ဒါမှမဟုတ် .dot() ကိုသုံးမှသာ တကယ့် Matrix မြှောက်ခြင်း (Matrix Multiplication) ကို လုပ်ဆောင်တာ ဖြစ်ပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">a3</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">*</span> <span class="n">a2</span>            <span class="c1"># နေရာတူတဲ့ element အချင်းချင်း မြှောက်ခြင်း (Element-wise)</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">a3</span> <span class="o">=</span> <span class="n">a1</span> <span class="o">@</span> <span class="n">a2</span>            <span class="c1"># Matrix မြှောက်နည်းအတိုင်း မြှောက်ခြင်း (Matrix multiplication)</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">a4</span> <span class="o">=</span> <span class="n">a1</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">a2</span><span class="p">)</span>         <span class="c1"># ဒါကလည်း Matrix multiplication ပါပဲ</span>
+</span></code></pre></div></li>
+<li>Matrix တစ်ခုကို Transpose လုပ်ချင်တယ် (Row နဲ့ Column ပြောင်းပြန်လှန်ချင်တယ်) ဆိုရင်လည်း အလွယ်တကူ လုပ်လို့ရပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]])</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span>
+</span></code></pre></div></li>
+<li>Trace ဆိုတာက Matrix တစ်ခုရဲ့ ထောင့်ဖြတ်မျဉ်း (Principal diagonal) ပေါ်မှာရှိတဲ့ element တွေကို ပေါင်းခြင်းဖြစ်ပါတယ်။ ဒါကို np.trace() နဲ့ ရှာနိုင်ပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>         <span class="c1"># 1 + 5 + 9 = 15 ဆိုပြီး ရလာပါမယ်</span>
+</span></code></pre></div></li>
+<li>Inverse Matrix ဆိုတာက မူရင်း Matrix နဲ့ ပြန်မြှောက်လိုက်ရင် Identity Matrix ရလာမယ့် Matrix အမျိုးအစားကို ပြောတာပါ။ NumPy ရဲ့ linalg (Linear Algebra) module အောက်က inv() ကိုသုံးပြီး ရှာနိုင်ပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div></li>
+<li>Linear Simultaneous Equations (တစ်ပြိုင်နက်ညီမျှခြင်း) တွေကို ဖြေရှင်းတဲ့နေရာမှာလည်း NumPy ကို သုံးနိုင်ပါတယ်။ဥပမာ - <span class="arithmatex">\(<span class="arithmatex">\(3x + y = 9\)</span>\)</span> <span class="arithmatex">\(<span class="arithmatex">\(နဲ့\)</span>\)</span> <span class="arithmatex">\(<span class="arithmatex">\(x + 2y = 8\)</span>\)</span> ဆိုတဲ့ ညီမျှခြင်းနှစ်ကြောင်းရဲ့ အဖြေကို လိုချင်ရင် အခုလို တွက်နိုင်ပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span> <span class="c1"># x နဲ့ y ရဲ့ မြှောက်ဖော်ကိန်း (Coefficients) များ</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">9</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>         <span class="c1"># ညီမျှခြင်းရဲ့ ရလဒ်များ</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>    <span class="c1"># အဖြေရှာခြင်း</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></code></pre></div></li>
+</ul>
+<h3 id="2744-bitwise-operations">27.4.4 Bitwise Operations<a class="headerlink" href="#2744-bitwise-operations" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Array ထဲမှာရှိတဲ့ element တစ်လုံးချင်းစီအပေါ်မှာ Bitwise operations တွေကိုလည်း အောက်ပါအတိုင်း တွက်ချက်လုပ်ဆောင်နိုင်ပါသေးတယ်။</li>
+</ul>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="n">a1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]])</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="c1"># Bitwise AND, OR, XOR တွက်ချက်ခြင်းများ</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="n">a3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span><span class="n">a2</span><span class="p">)</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="n">a4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">bitwise_or</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span><span class="n">a2</span><span class="p">)</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="n">a5</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">bitwise_xor</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span><span class="n">a2</span><span class="p">)</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="c1"># Invert (NOT) လုပ်ခြင်း</span>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="n">a6</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="c1"># Bit Shifting လုပ်ခြင်း</span>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="n">a7</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">left_shift</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>    <span class="c1"># element တစ်ခုစီကို ဘယ်ဘက်သို့ 3 bits ရွှေ့ခြင်း</span>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="n">a8</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">right_shift</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>   <span class="c1"># element တစ်ခုစီကို ညာဘက်သို့ 2 bits ရွှေ့ခြင်း</span>
+</span></code></pre></div>
+<h3 id="2745-copying-and-sorting">27.4.5 Copying and Sorting (ကူးယူခြင်းနှင့် အစီအစဉ်ချခြင်း)<a class="headerlink" href="#2745-copying-and-sorting" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>NumPy မှာ Copy ကူးတဲ့နည်းလမ်း (၃) မျိုး ရှိပါတယ်။</p>
+<ul>
+<li>
+<p>No Copy: လုံးဝ Copy မကူးခြင်း (Reference သဘောမျိုး)။</p>
+</li>
+<li>
+<p>Shallow Copy (View): အပေါ်ယံ အခွံပဲ ကူးယူခြင်း (Data က အတူတူပဲ)။</p>
+</li>
+<li>
+<p>Deep Copy: အနှစ်ပါမကျန် တစ်စုံလုံး ပွားယူခြင်း။</p>
+</li>
+</ul>
+</li>
+<li>
+<p>No Copy: Object ကိုရော၊ Data ကိုရော ကူးယူတာ မဟုတ်ပါဘူး။ Array ရှိနေတဲ့ လိပ်စာ (Address) ကို Variable အသစ်တစ်ခုနဲ့ လှမ်းညွှန်းလိုက်တာမျိုးပဲ ဖြစ်ပါတယ်။</p>
+</li>
+<li>
+<p>Shallow Copy (View): Array object အသစ်တစ်ခု ဖန်တီးလိုက်ပေမယ့်၊ အတွင်းက Data တွေကတော့ မူရင်း Array ရဲ့ Data တွေကိုပဲ မျှသုံးနေတာ (Point လုပ်နေတာ) ဖြစ်ပါတယ်။</p>
+</li>
+<li>
+<p>Deep Copy: Array object အသစ်ရော၊ Data အသစ်ရော သီးသန့်ခွဲထုတ်ပြီး အကုန် ကူးယူလိုက်တာ ဖြစ်ပါတယ်။</p>
+</li>
+</ul>
+<p>အောက်ပါ Code ဥပမာမှာ d နဲ့ပတ်သက်တဲ့ အပိုင်း ကျန်ခဲ့လို့ ကျွန်တော် ဖြည့်စွက်ပြီး ရှင်းပြပေးထားပါတယ်ခင်ဗျာ။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># --- No Copy (Reference) ---</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="n">b</span> <span class="o">=</span> <span class="n">a</span>                           <span class="c1"># Copy ကူးတာမဟုတ်ပါ၊ နာမည်နောက်တစ်ခု တပ်လိုက်တာပါ</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="ow">is</span> <span class="n">a</span><span class="p">)</span>                   <span class="c1"># True (a နဲ့ b က အတူတူပါပဲ)</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>                   <span class="c1"># b ကို ပြင်လိုက်ရင် a ပါ လိုက်ပြောင်းသွားမယ်</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="c1"># --- Shallow Copy (View) ---</span>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">view</span><span class="p">()</span>                    <span class="c1"># View အနေနဲ့ ဖန်တီးလိုက်တာပါ</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span> <span class="ow">is</span> <span class="n">a</span><span class="p">)</span>                   <span class="c1"># False (Object ချင်း မတူတော့ပါဘူး)</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>                    <span class="c1"># ဒါပေမယ့် c ကို ပြင်ရင် မူရင်း a မှာပါ လိုက်ပြောင်းသွားပါလိမ့်မယ်</span>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="c1"># --- Deep Copy ---</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="n">d</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>                    <span class="c1"># (မူရင်းစာမှာ ဒီ line ကျန်ခဲ့လို့ ဖြည့်ထားပါတယ်)</span>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">d</span> <span class="ow">is</span> <span class="n">a</span><span class="p">)</span>                   <span class="c1"># False (လုံးဝမဆိုင်တဲ့ Object တွေပါ)</span>
+</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">150</span>                   <span class="c1"># d ကို ပြင်လိုက်ရင် မူရင်း a မှာ လိုက်မပြောင်းတော့ပါဘူး</span>
+</span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a><span class="n">Sorting</span> <span class="p">(</span><span class="n">အစီအစဉ်ချခြင်း</span><span class="p">)</span> <span class="n">အတွက်လည်း</span> <span class="n">အောက်ပါအတိုင်း</span> <span class="n">လုပ်ဆောင်နိုင်ပါတယ်</span><span class="err">။</span>
+</span></code></pre></div>
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span> 
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>                <span class="c1"># Row အလိုက် ငယ်စဉ်ကြီးလိုက် စီပေးသွားမယ်</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="n">b</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>        <span class="c1"># Column အလိုက် (ဒေါင်လိုက်) ငယ်စဉ်ကြီးလိုက် စီပေးသွားမယ်</span>
+</span></code></pre></div></p>
+<h3 id="2746-comparison">27.4.6 Comparison (နှိုင်းယှဉ်ခြင်းများ)<a class="headerlink" href="#2746-comparison" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Array တွေမှာ ယှဉ်ကြည့်စရာ၊ တိုက်စစ်စရာ (Comparison) ပုံစံ (၃) မျိုး ရှိပါတယ်။</p>
+<ul>
+<li>(a) One Value Comparison: Array ထဲက Element အားလုံးကို တန်ဖိုးတစ်ခုတည်းနဲ့ လိုက်ယှဉ်ကြည့်ပြီး ရလာတဲ့ အဖြေ (True/False) ကို Array ပြန်ထုတ်ပေးတာ။</li>
+<li>(b) Corresponding Elements Comparison: Array နှစ်ခုမှာရှိတဲ့ နေရာတူ Element အချင်းချင်း လိုက်ယှဉ်ကြည့်ပြီး Boolean Array ပြန်ထုတ်ပေးတာ။</li>
+<li>&copy; Full Array Comparison: Array နှစ်ခုရဲ့ ပုံသဏ္ဍာန် (Shape) ရော၊ ပါဝင်တဲ့ Element တွေရော ထပ်တူညီမညီ စစ်ဆေးတာ (တူရင် True, မတူရင် False ပြပါတယ်)။</li>
+</ul>
+</li>
+<li>
+<p>(1) Array Element အားလုံးကို တန်ဖိုးတစ်ခုနဲ့ လိုက်ယှဉ်ခြင်း
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span>                <span class="c1"># 5 ထက်ငယ်လား လိုက်စစ်တာပါ</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1"># အဖြေက [[True False False] [True False True]] ဆိုပြီး ထွက်ပါမယ်</span>
+</span></code></pre></div></p>
+</li>
+<li>(2) Array နှစ်ခုက နေရာတူ Element အချင်းချင်း ယှဉ်ခြင်း
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span>                <span class="c1"># a က b ထက် ငယ်သလား နေရာတူချင်း တိုက်စစ်တာပါ</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="c1"># အဖြေက [[False False False] [False True False]] ဆိုပြီး ထွက်ပါမယ်</span>
+</span></code></pre></div></li>
+<li>(3) Array နှစ်ခုလုံး ထပ်တူညီမညီ ယှဉ်ခြင်း
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">))</span>  <span class="c1"># True (Shape ရော Element တွေရော ကွက်တိတူလို့ပါ)</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">c</span><span class="p">))</span>  <span class="c1"># False (Shape မတူတော့လို့ပါ)</span>
+</span></code></pre></div></li>
+</ul>
+<h3 id="2747-indexing-and-slicing-array">27.4.7 Indexing and Slicing (Array ခန်းများ ညွှန်းဆိုခြင်းနှင့် အပိုင်းဖြတ်ခြင်း)<a class="headerlink" href="#2747-indexing-and-slicing-array" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Python List တွေလိုပါပဲ၊ NumPy Array တွေကလည်း 0 ကနေစပြီး ရေတွက် (Indexing လုပ်) ပါတယ်။ အနောက်ဆုံးကနေ ပြန်ရေချင်ရင် အနုတ်လက္ခဏာ (Negative index) သုံးလို့ရပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>          <span class="c1"># 3 နဲ့ 2 ကို ထုတ်ပေးပါလိမ့်မယ် (ရှေ့ဆုံးနဲ့ နောက်ဆုံး)</span>
+</span></code></pre></div></li>
+<li>Dimension တစ်ခုထက်ပိုတဲ့ Array (Multi-dimensional array) တွေမှာ အခန်းတစ်ခန်းချင်းစီကို လှမ်းယူချင်ရင် Index နံပါတ်တစ်ခုမက သုံးရပါတယ်။</li>
+</ul>
+<p><div class="language-Python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>              <span class="c1"># 9 ကို ထုတ်ပေးပါလိမ့်မယ်</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="c1"># (a[1] က ဒုတိယမြောက် Row [1,5,9] ဖြစ်ပြီး၊ အဲ့ဒီထဲက index 2 ဖြစ်တဲ့ 9 ကို ယူလိုက်တာပါ)</span>
+</span></code></pre></div>
+- သတိပြုရန် - a[1][2] လို့ရေးတာက ကွန်ပျူတာအလုပ်လုပ်ပုံအရ နည်းနည်းကွာခြားပါတယ်။ သူက ပထမ a[1] အပိုင်းကို အရင်ဆွဲထုတ်ပြီး ယာယီ array (temporary array) တစ်ခုအရင်ဆောက်လိုက်တယ်၊ ပြီးမှ အဲ့ဒီအထဲက index 2 ကို ထပ်ဆွဲထုတ်တာ ဖြစ်ပါတယ်။ (NumPy မှာ ပိုမြန်ချင်ရင် a[1, 2] လို့ရေးတာက ပိုကောင်းပါတယ်)။</p>
+<ul>
+<li>Slicing (အပိုင်းဖြတ်တာ) ကလည်း List တွေအတိုင်းပါပဲ။ ထူးခြားတာက Dimension တွေအများကြီးမှာ ကော်မာ (comma) ခံပြီး တပြိုင်နက် ဖြတ်လို့ရတာပါပဲ။</li>
+</ul>
+<p><div class="language-Python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">])</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="c1"># b မှာ မူရင်းစာသားအရ Row 3 ကြောင်းရှိမယ်လို့ ယူဆရပါတယ် (ရှင်းလင်းချက်အရ)</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span> 
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>               <span class="c1"># [4 1 5] (Index 2 ကနေ 5 မတိုင်ခင်ထိ)</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">])</span>               <span class="c1"># [8 2] (အစကနေ နောက်ဆုံး 4 လုံးမတိုင်ခင်ထိ)</span>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="c1"># 2D Slicing (Comma သုံးထားပုံကို သတိပြုပါ)</span>
+</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>          
+</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="c1"># Row 1 ကနေ 3 မတိုင်ခင်ထိ (Row 1, 2) ယူမယ်၊ </span>
+</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="c1"># Column 2 ကနေ 4 မတိုင်ခင်ထိ (Col 2, 3) ယူမယ်။</span>
+</span><span id="__span-27-13"><a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="c1"># ရလဒ်က [[9 2], [3 1]] ဆိုပြီး ထွက်ပါမယ်။</span>
+</span></code></pre></div>
+- အရေးကြီးတဲ့ အချက် (Common Mistake)</p>
+<ul>
+<li>
+<p>b[1:3][2:4] လို့ရေးတာနဲ့ b[1:3, 2:4] လို့ရေးတာ မတူပါဘူး။</p>
+</li>
+<li>
+<p>b[1:3][2:4] လို့ရေးလိုက်ရင် ပထမ b[1:3] အရ Row 1 နဲ့ 2 ပါတဲ့ Array အသစ်တစ်ခု ထွက်လာမယ်။ ပြီးတော့မှ အဲ့ဒီ Array အသစ်ရဲ့ Row 2 ကနေ 4 ကို ထပ်ဖြတ်ဖို့ ကြိုးစားပါလိမ့်မယ်။ Array အသစ်မှာက Row 2 row ပဲရှိတော့ [2:4] ဆိုတဲ့ row တွေ မရှိတော့ပါဘူး။ ဒါကြောင့် အဖြေက Empty Array [ ] (အလွတ်) ထွက်လာတာ ဖြစ်ပါတယ်။</p>
+</li>
+</ul>
+<h2 id="275-array-manipulation-array">27.5 Array Manipulation (Array များကို ပုံစံပြောင်းလဲ ကိုင်တွယ်ခြင်း)<a class="headerlink" href="#275-array-manipulation-array" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Reshaping (ပုံသဏ္ဍာန် ပြောင်းလဲခြင်း) Array တစ်ခုကို တည်ဆောက်ပြီးပြီဆိုရင် reshape() method ကိုသုံးပြီး သူ့ရဲ့ ပုံသဏ္ဍာန် (Shape) ကို ပြောင်းလဲနိုင်ပါတယ်။ ဒီ Method က Data တွေကို မထိခိုက်စေဘဲ Shape အသစ်နဲ့ Array တစ်ခုကို ပြန်ထုတ်ပေးတာပါ။</li>
+</ul>
+<p><em>(မှတ်ချက် - မူရင်းစာသားပါ Code တွင် Element အရေအတွက် ကွဲလွဲမှုရှိနေသဖြင့် တွက်ချက်၍ရအောင် အနည်းငယ် ပြင်ဆင်ရှင်းပြပေးထားပါတယ်)</em></p>
+<p><div class="language-Python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="c1"># Element ၁၂ လုံးပါတဲ့ Array တစ်ခု (3 rows x 4 columns)</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span> 
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="c1"># 2 rows x 6 columns ပုံစံ ပြောင်းမယ်</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="c1"># ရလဒ်: [[3 7 6 9 1 5] [2 4 0 3 1 5]]</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="c1"># Row 4 ကြောင်းလိုချင်တယ်၊ Column ကိုတော့ Auto တွက်ထည့်စေချင်ရင် &#39;-1&#39; သုံးရတယ်</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="c1"># ရလဒ်: [[3 7 6] [9 1 5] [2 4 0] [3 1 5]] (4 rows x 3 columns ဖြစ်သွားမယ်)</span>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="c1"># 0-11 အထိ ဂဏန်းတွေကိုထုတ်ပြီး တန်းပြီး reshape လုပ်ခြင်း</span>
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a><span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>  
+</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>                        
+</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a><span class="c1"># ရလဒ်: [[0 1 2 3 4 5] [6 7 8 9 10 11]]</span>
+</span></code></pre></div>
+- Flattening (ပြားချခြင်း) Multi-dimensional array (အထပ်ထပ်ပါတဲ့ array) တစ်ခုကို ravel() သုံးပြီး 1D array (တန်းတစ်တန်းတည်းဖြစ်သွားအောင်) ပြားချလိုက်လို့ ရပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>                        
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="c1"># ရလဒ်: [3 7 6 9 1 5 2 4 0 3 1 5] ဆိုပြီး တစ်တန်းတည်း ထွက်လာမယ်</span>
+</span></code></pre></div>
+- Appending (ထပ်ဖြည့်ခြင်း) ရှိပြီးသား Array တစ်ခုရဲ့ အနောက်မှာ နောက်ထပ် တန်ဖိုးတွေ ထပ်ဖြည့်ချင်ရင် np.append() ကို သုံးနိုင်ပါတယ်။
+<div class="language-Python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="c1"># Axis 0 (Row အလိုက်/အောက်ဘက်သို့) ဆက်မယ်</span>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="c1"># ရလဒ်: Row ၄ ကြောင်း ဖြစ်လာမယ်</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="c1"># Axis 1 (Column အလိုက်/ဘေးဘက်သို့) ဆက်မယ်</span>
+</span><span id="__span-30-10"><a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-30-11"><a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="c1"># ရလဒ်: Row 2 ကြောင်းပဲ ရှိမယ်၊ ဒါပေမယ့် Column တွေ များသွားမယ်</span>
+</span></code></pre></div>
+<strong>သတိပြုရန် -</strong></p>
+<ul>
+<li>append လုပ်လိုက်ရင် မူရင်း Array ကို သွားပြင်တာမဟုတ်ဘဲ၊ တန်ဖိုးသစ်တွေပါဝင်တဲ့ Array အသစ်တစ်ခု (Copy) ကို ထုတ်ပေးတာ ဖြစ်ပါတယ်။ ထပ်ဖြည့်မယ့် Array ဟာ မူရင်း Array နဲ့ Shape တူညီဖို့ လိုပါတယ်။ တကယ်လို့ axis မသတ်မှတ်ထားဘူးဆိုရင် Array တွေကို အရင်ဆုံး ပြားချ (Flatten) လိုက်ပြီးမှ ဆက်ပေးသွားမှာ ဖြစ်ပါတယ်။ </li>
+<li>ဒါ့အပြင် Array တွေထဲမှာ Element ကြားဖြတ်ထည့်တာ (Insert)၊ ဖျက်တာ (Delete) နဲ့ ခွဲထုတ်တာ (Split) လုပ်တဲ့ Function တွေလည်း ရှိပါသေးတယ်။ ဒါတွေကိုတော့ ကိုယ့်ဘာသာ ဆက်လက်လေ့လာကြည့်ဖို့ အကြံပြုထားပါတယ်။</li>
+</ul>
+<hr />
+<h2 id="problems">Problems<a class="headerlink" href="#problems" title="Permanent link">&para;</a></h2>
+<h3 id="problem-271">Problem 27.1<a class="headerlink" href="#problem-271" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Dimension 4 x 2 x 3 ရှိတဲ့ 3D Array တစ်ခုကို တည်ဆောက်တဲ့ Program ရေးပါ။ Array ထဲမှာ တန်ဖိုးတချို့ကို ကနဦးသတ်မှတ် (Initialize) ပါ။ ပြီးနောက် Axis တစ်ခုစီအလိုက် အကြီးဆုံးတန်ဖိုး (Maximum) တွေကို ရှာဖွေပါ။</li>
+</ul>
+<details>
+<summary><b>Program</b></summary>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="c1"># 4x2x3 Array တစ်ခု တည်ဆောက်ခြင်း</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]],[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">]],[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">]],[[</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]]])</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Maximum along axis 0&#39;</span><span class="p">)</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">))</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Maximum along axis 1&#39;</span><span class="p">)</span>
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>
+</span><span id="__span-31-11"><a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Maximum along axis 2&#39;</span><span class="p">)</span>
+</span><span id="__span-31-12"><a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">2</span><span class="p">))</span>
+</span></code></pre></div>
+</details>
+
+<details>
+<summary><b>Output</b></summary>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="n">Maximum</span> <span class="n">along</span> <span class="n">axis</span> <span class="mi">0</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="p">[[</span><span class="mi">8</span> <span class="mi">7</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="p">[</span><span class="mi">7</span> <span class="mi">7</span> <span class="mi">9</span><span class="p">]]</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="n">Maximum</span> <span class="n">along</span> <span class="n">axis</span> <span class="mi">1</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="p">[[</span><span class="mi">3</span> <span class="mi">7</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="p">[</span><span class="mi">7</span> <span class="mi">2</span> <span class="mi">9</span><span class="p">]</span>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="p">[</span><span class="mi">5</span> <span class="mi">4</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="p">[</span><span class="mi">8</span> <span class="mi">7</span> <span class="mi">8</span><span class="p">]]</span>
+</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="n">Maximum</span> <span class="n">along</span> <span class="n">axis</span> <span class="mi">2</span> 
+</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="p">[[</span><span class="mi">7</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a><span class="p">[</span><span class="mi">4</span> <span class="mi">9</span><span class="p">]</span>
+</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a><span class="p">[</span><span class="mi">1</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a><span class="p">[</span><span class="mi">8</span> <span class="mi">8</span><span class="p">]]</span>
+</span></code></pre></div>
+</details>
+
+<h3 id="problem-272">Problem 27.2<a class="headerlink" href="#problem-272" title="Permanent link">&para;</a></h3>
+<ul>
+<li>၁ မှ ၂၀ ထိ ဂဏန်းများပါဝင်ပြီး Shape 5 x 4 ရှိသော Array တစ်ခုကို တည်ဆောက်ပါ။ Array တစ်ခုလုံးရဲ့ ပေါင်းလဒ်၊ Row အလိုက် ပေါင်းလဒ်များ နှင့် Column အလိုက် ပေါင်းလဒ်များကို ရှာဖွေသည့် Program ရေးပါ။ </li>
+</ul>
+<details>
+<summary><b>Program</b></summary>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>            <span class="c1"># Array တစ်ခုလုံးပေါင်းလဒ်</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">))</span>  <span class="c1"># Column အလိုက်ပေါင်းလဒ်</span>
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># Row အလိုက်ပေါင်းလဒ်</span>
+</span></code></pre></div>
+</details>
+
+<details>
+<summary><b>Output</b></summary>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="p">[[</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="p">[</span><span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span> <span class="mi">7</span><span class="p">]</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="p">[</span><span class="mi">8</span> <span class="mi">9</span> <span class="mi">10</span> <span class="mi">11</span><span class="p">]</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="p">[</span><span class="mi">12</span> <span class="mi">13</span> <span class="mi">14</span> <span class="mi">15</span><span class="p">]</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="p">[</span><span class="mi">16</span> <span class="mi">17</span> <span class="mi">18</span> <span class="mi">19</span><span class="p">]]</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="mi">190</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="p">[</span><span class="mi">40</span> <span class="mi">45</span> <span class="mi">50</span> <span class="mi">55</span><span class="p">]</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="p">[</span><span class="mi">6</span> <span class="mi">22</span> <span class="mi">38</span> <span class="mi">54</span> <span class="mi">70</span><span class="p">]</span>
+</span></code></pre></div>
+</details>
+
+<h3 id="problem-273">Problem 27.3<a class="headerlink" href="#problem-273" title="Permanent link">&para;</a></h3>
+<ul>
+<li>အောက်ပါလုပ်ဆောင်ချက်များ ရရှိရန် Program ရေးပါ <ul>
+<li>Size 10 ရှိပြီး Element အားလုံး တန်ဖိုး 3 သတ်မှတ်ထားတဲ့ Array a ကို တည်ဆောက်ပါ။</li>
+<li>Array a ရဲ့ Memory Size နဲ့ Element တစ်ခုချင်းစီရဲ့ Size ကို ရှာပါ။</li>
+<li>0 မှ 90 အထိ တန်ဖိုးများ ညီတူညီမျှ ကွာခြားပြီး (Evenly spaced) ပါဝင်တဲ့ Size 10 ရှိ Array b ကို တည်ဆောက်ပါ။</li>
+<li>Array b ရှိ Element များကို ပြောင်းပြန်လှန် (Reverse) ပါ။</li>
+<li>Array a နှင့် b ကို ပေါင်းပြီး ရလာဒ်ကို Array c ထဲသို့ သိမ်းဆည်းပါ။</li>
+</ul>
+</li>
+</ul>
+<details>
+<summary><b>Program</b></summary>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">nbytes</span><span class="p">)</span>     <span class="c1"># Memory size</span>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">itemsize</span><span class="p">)</span>   <span class="c1"># Individual element size</span>
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span><span id="__span-35-8"><a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a><span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>         <span class="c1"># Reversing</span>
+</span><span id="__span-35-9"><a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span><span id="__span-35-10"><a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-35-11"><a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></code></pre></div>
+</details>
+
+<details>
+<summary><b>Output</b></summary>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="p">[</span><span class="mi">3</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">3</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="mi">40</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="mi">4</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="p">[</span><span class="mf">0.</span> <span class="mf">10.</span> <span class="mf">20.</span> <span class="mf">30.</span> <span class="mf">40.</span> <span class="mf">50.</span> <span class="mf">60.</span> <span class="mf">70.</span> <span class="mf">80.</span> <span class="mf">90.</span><span class="p">]</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="p">[</span><span class="mf">90.</span> <span class="mf">80.</span> <span class="mf">70.</span> <span class="mf">60.</span> <span class="mf">50.</span> <span class="mf">40.</span> <span class="mf">30.</span> <span class="mf">20.</span> <span class="mf">10.</span> <span class="mf">0.</span><span class="p">]</span>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a><span class="p">[</span><span class="mf">93.</span> <span class="mf">83.</span> <span class="mf">73.</span> <span class="mf">63.</span> <span class="mf">53.</span> <span class="mf">43.</span> <span class="mf">33.</span> <span class="mf">23.</span> <span class="mf">13.</span> <span class="mf">3.</span><span class="p">]</span>
+</span></code></pre></div>
+</details>
+
+<h3 id="problem-274">Problem 27.4<a class="headerlink" href="#problem-274" title="Permanent link">&para;</a></h3>
+<ul>
+<li>အောက်ပါလုပ်ဆောင်ချက်များ ရရှိရန် Program ရေးပါ <ul>
+<li>Size 5 x 5 ရှိတဲ့ 2D Array တစ်ခု တည်ဆောက်ပါ။ ဘောင် (Border) ပတ်လည်ရှိ Element များကို 1 ပေးပြီး၊ အတွင်းပိုင်း Element များကို 3 ပေးပါ။</li>
+<li>တန်ဖိုး 2 တွေချည်းပါဝင်တဲ့ 4 x 3 Matrix တစ်ခုနဲ့ မြှောက်ပါ။</li>
+<li>ပေးထားသော 1D Array တစ်ခုအတွင်းရှိ တန်ဖိုး 2 နှင့် 8 ကြားရှိသော Element များကို အနှုတ်လက္ခဏာ (Negate) ပြောင်းပါ။ (မူရင်း Array ထဲမှာပင် ပြောင်းလဲခြင်း - in place)။ </li>
+</ul>
+</li>
+</ul>
+<details>
+<summary><b>Program</b></summary>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="c1"># Note: Code logic requires modification to set inner elements to 3</span>
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="c1"># a[1:-1, 1:-1] = 3 # (This line is needed to match the description)</span>
+</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>
+</span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span> <span class="c1"># Creating 4x3 matrix</span>
+</span><span id="__span-37-8"><a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># Creating matrix for multiplication</span>
+</span><span id="__span-37-9"><a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a><span class="n">d</span> <span class="o">=</span> <span class="n">b</span> <span class="o">@</span> <span class="n">c</span>          <span class="c1"># Matrix Multiplication</span>
+</span><span id="__span-37-10"><a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</span><span id="__span-37-11"><a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a>
+</span><span id="__span-37-12"><a id="__codelineno-37-12" name="__codelineno-37-12" href="#__codelineno-37-12"></a><span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+</span><span id="__span-37-13"><a id="__codelineno-37-13" name="__codelineno-37-13" href="#__codelineno-37-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span><span id="__span-37-14"><a id="__codelineno-37-14" name="__codelineno-37-14" href="#__codelineno-37-14"></a><span class="n">e</span><span class="p">[(</span><span class="mi">2</span> <span class="o">&lt;</span> <span class="n">e</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">e</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">)]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span> <span class="c1"># Negating elements between 2 and 8</span>
+</span><span id="__span-37-15"><a id="__codelineno-37-15" name="__codelineno-37-15" href="#__codelineno-37-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span></code></pre></div>
+</details>
+
+<details>
+<summary><b>Output</b></summary>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="p">[[</span><span class="mf">1.</span> <span class="mf">1.</span> <span class="mf">1.</span> <span class="mf">1.</span> <span class="mf">1.</span><span class="p">]</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="p">[</span><span class="mf">1.</span> <span class="mf">3.</span> <span class="mf">3.</span> <span class="mf">3.</span> <span class="mf">1.</span><span class="p">]</span>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="p">[</span><span class="mf">1.</span> <span class="mf">3.</span> <span class="mf">3.</span> <span class="mf">3.</span> <span class="mf">1.</span><span class="p">]</span>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="p">[</span><span class="mf">1.</span> <span class="mf">3.</span> <span class="mf">3.</span> <span class="mf">3.</span> <span class="mf">1.</span><span class="p">]</span>
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a><span class="p">[</span><span class="mf">1.</span> <span class="mf">1.</span> <span class="mf">1.</span> <span class="mf">1.</span> <span class="mf">1.</span><span class="p">]]</span>
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="p">[[</span><span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span><span class="p">]</span>
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a><span class="p">[</span><span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span><span class="p">]</span>
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a><span class="p">[</span><span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span><span class="p">]</span>
+</span><span id="__span-38-9"><a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a><span class="p">[</span><span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span> <span class="mf">6.</span><span class="p">]]</span>
+</span><span id="__span-38-10"><a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a><span class="p">[</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span> <span class="mi">7</span> <span class="mi">8</span> <span class="mi">9</span> <span class="mi">10</span><span class="p">]</span>
+</span><span id="__span-38-11"><a id="__codelineno-38-11" name="__codelineno-38-11" href="#__codelineno-38-11"></a><span class="p">[</span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">2</span> <span class="o">-</span><span class="mi">3</span> <span class="o">-</span><span class="mi">4</span> <span class="o">-</span><span class="mi">5</span> <span class="o">-</span><span class="mi">6</span> <span class="o">-</span><span class="mi">7</span> <span class="mi">8</span> <span class="mi">9</span> <span class="mi">10</span><span class="p">]</span>
+</span></code></pre></div>
+</details>
+
+<h2 id="exercises"><strong>Exercises</strong><a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
+<p>[A] <strong>အောက်ပါ ဖော်ပြချက်များသည် အမှန် (True) သို့မဟုတ် အမှား (False) ဖြစ်ကြောင်း ဖော်ပြပါ</strong>
+   - [ ] Python ကို Install လုပ်လိုက်တာနဲ့ Numpy library ပါ အလိုအလျောက် Install ဖြစ်ပြီးသား ဖြစ်သည်။
+   - [ ] Numpy array တွေက Python List တွေထက် ပိုမြန်သည်။
+   - [ ] Numpy array element တွေက အမျိုးအစား (Data Type) မတူညီတာတွေ ရောနှောပါဝင်လို့ ရသည်။
+   - [ ] Numpy array တစ်ခုကို တည်ဆောက်ပြီးသွားရင် သူ့ရဲ့ Size နဲ့ Shape ကို ပြောင်းလဲလို့ မရတော့ပါ။ (Dynamically cannot change)
+   - [ ] <strong>np.array_equal(a,b)</strong> သည် Array <em>a</em> နှင့် <em>b</em> ၏ Shape ရော Element တွေပါ တူညီမှသာ True ကို ပြန်ပေးသည်။ </p>
+<p>[B] <strong>အောက်ပါ မေးခွန်းများကို ဖြေဆိုပါ</strong>
+- (a) ပထမဆုံး သဘာဝကိန်း (Natural numbers) ၁၀ လုံးပါဝင်တဲ့ Numpy Array ကို ဘယ်လို တည်ဆောက်မလဲ?
+- (b) Numpy ကိုသုံးပြီး ကိန်းရှုပ် (Complex numbers) Array တွေကို တည်ဆောက်လို့ ရပါသလား?
+- &copy; Size 3 x 4 x 5 ရှိတဲ့ Array ၅ ခုကို တည်ဆောက်ပြီး တစ်ခုချင်းစီမှာ 0 တွေချည်း၊ 1 တွေချည်း၊ 5 တွေချည်း၊ Random တန်ဖိုးများနှင့် Garbage တန်ဖိုးများ အသီးသီး ဖြည့်သွင်းချင်ရင် ဘယ်လိုလုပ်မလဲ?
+- (d) ၁ မှ စတင်သော မဂဏန်း (Odd numbers) များပါဝင်သည့် Element ၅၀ ရှိသော Array တစ်ခုကို ဘယ်လို တည်ဆောက်မလဲ?
+- (e) Numpy array တစ်ခုရဲ့ Element အမျိုးအစား (Type)၊ အရေအတွက်၊ Base Address နှင့် နေရာယူထားသော Byte ပမာဏတို့ကို ဘယ်လို သိနိုင်မလဲ?
+- (f) a1 = np.array([[1,2,3,4],[5,6,7,8]]) ဟု တည်ဆောက်ထားသော Array ၏ Dimension နှင့် Shape ကို ဘယ်လို သိနိုင်မလဲ?
+- (g) 3 x 4 Matrix နှစ်ခု ပေးထားပါက ၎င်းတို့၏ သက်ဆိုင်ရာ Element အချင်းချင်း ပေါင်းခြင်း၊ နှုတ်ခြင်း၊ မြှောက်ခြင်း နှင့် စားခြင်းတို့ကို ဘယ်လို လုပ်ဆောင်မလဲ?
+- (h) အောက်ပါ Code များအနက် မည်သည်တို့သည် Numpy array ၏ Scalar arithmetic operations များ ဖြစ်ကြသနည်း?</p>
+<div class="language-text highlight"><pre><span></span><code>```python
+a1 = np.array([[10,2,3,4],[5,6,7,8]]) 
+a2 = np.array([[1,1,1,1],[2,2,2,2]])
+a3 = a1 + a2
+a4 = a1 - a2
+a5 = a1 * a2
+a6 = a1 / a2
+a7 = a1 % a2
+a8 = a1 ** 2
+a9 += a1
+a10 += 5
+a11 = a1 + 2
+a12 = a1 ** 2
+```
+</code></pre></div>
+<p>[C] <strong>Match The Following pairs:</strong></p>
+<table>
+<thead>
+<tr>
+<th>ကုဒ် / လုပ်ဆောင်ချက်</th>
+<th>ဖော်ပြချက်</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(a) <code>s = np.trace(a)</code></td>
+<td>1. စာရင်းအင်းဆိုင်ရာ တွက်ချက်ခြင်း (Statistical Operation)</td>
+</tr>
+<tr>
+<td>(b) <code>s = a.cumsum(axis = 1)</code></td>
+<td>2. Linear Algebra တွက်ချက်ခြင်း</td>
+</tr>
+<tr>
+<td>&copy; <code>a2 = np.copy(a1)</code></td>
+<td>3. Deep copy ပြုလုပ်ခြင်း</td>
+</tr>
+<tr>
+<td>(d) <code>print(a1 &lt; 2)</code></td>
+<td>4. သက်ဆိုင်ရာ Element အချင်းချင်း နှိုင်းယှဉ်ခြင်း</td>
+</tr>
+<tr>
+<td>(e) <code>print(a1 &gt; a2)</code></td>
+<td>5. တန်ဖိုးတစ်ခုတည်းနှင့် နှိုင်းယှဉ်ခြင်း (Scalar comparison)</td>
+</tr>
+<tr>
+<td>(f) <code>print(a[1:3][3:6])</code></td>
+<td>6. Bitwise လုပ်ဆောင်ချက်</td>
+</tr>
+<tr>
+<td>(g) <code>a2 = invert(a1)</code></td>
+<td>7. Inversion ပြုလုပ်ခြင်း / Slicing ပြုလုပ်ခြင်း</td>
+</tr>
+</tbody>
+</table>
+<div class="comments-section">
+  <h2 class="comments-title">💬 Comments & Discussion</h2>
+  <script src="https://giscus.app/client.js"
+        data-repo="Joseph1997-eng/Let-Us-Python-Book-"
+        data-repo-id="R_kgDOQfXjHg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQfXjHs4CzbEE"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+  </script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../index.mm/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../index.hk/" class="md-footer__link md-footer__link--next" aria-label="Next: Home">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Joseph
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/Joseph1997-eng" target="_blank" rel="noopener" title="Joseph&#39;s GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/robinson-joseph-61734a17a/" target="_blank" rel="noopener" title="Joseph&#39;s LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.facebook.com/josephsaimonn" target="_blank" rel="noopener" title="Joseph&#39;s Facebook" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:josephsaimonn@gmail.com" target="_blank" rel="noopener" title="Email Joseph" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.python.org" target="_blank" rel="noopener" title="Python Official" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+        <script src="../../javascripts/social-share.js"></script>
+      
+    
+  </body>
+</html>
