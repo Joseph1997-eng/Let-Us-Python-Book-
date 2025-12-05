@@ -1,4 +1,116 @@
-/* Custom Scrollbar */
+/* Myanmar Font - Using system fonts for better compatibility */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Myanmar", "Myanmar Text", sans-serif;
+}
+
+/* Myanmar Text Improvements */
+.md-typeset {
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+/* Myanmar specific spacing */
+.md-typeset p {
+  margin-bottom: 1.2em;
+}
+
+/* Headings */
+.md-typeset h1 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+}
+
+.md-typeset h2 {
+  font-size: 1.6em;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+  font-weight: 600;
+}
+
+.md-typeset h3 {
+  font-size: 1.3em;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+/* Table Styling - Proper rendering */
+.md-typeset table:not([class]) {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+  font-size: 0.9em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset table:not([class]) td {
+  padding: 10px 16px;
+  border: 1px solid var(--md-typeset-table-color);
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--md-code-bg-color);
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: rgba(0, 150, 136, 0.05);
+}
+
+/* Code blocks */
+.md-typeset pre>code {
+  font-size: 0.85em;
+  line-height: 1.6;
+  padding: 1em;
+}
+
+/* Details/Summary (collapsible sections) */
+.md-typeset details {
+  margin: 1.5em 0;
+  padding: 0;
+  border-radius: 4px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset details summary {
+  padding: 12px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--md-code-bg-color);
+  border-radius: 4px 4px 0 0;
+}
+
+.md-typeset details[open] summary {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset details>*:not(summary) {
+  padding: 16px;
+}
+
+/* Lists */
+.md-typeset ul,
+.md-typeset ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+.md-typeset li {
+  margin: 0.5em 0;
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -17,20 +129,43 @@
   background: var(--md-accent-fg-color);
 }
 
-/* Smooth Transitions */
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
+/* Print styles */
+@media print {
+
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer {
+    display: none !important;
+  }
+
+  .md-content {
+    max-width: 100%;
+  }
+
+  .md-typeset table {
+    page-break-inside: avoid;
+  }
+
+  .md-typeset pre {
+    page-break-inside: avoid;
+  }
 }
 
-/* Code Block Enhancements */
-.md-typeset pre > code {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+/* TOC improvements */
+.md-sidebar--secondary {
+  font-size: 0.75rem;
 }
 
-/* Admonition Styling */
-.md-typeset .admonition,
-.md-typeset details {
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+.md-nav__link {
+  padding: 0.4em 0.6em;
+}
+
+/* Admonitions */
+.md-typeset .admonition {
+  margin: 1.5em 0;
+  padding: 0 0.6rem;
+  border-left: 0.2rem solid;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
 }

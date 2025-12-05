@@ -1,0 +1,1929 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Professional Python programming documentation with multilingual support">
+      
+      
+        <meta name="author" content="Joseph">
+      
+      
+        <link rel="canonical" href="https://Joseph1997-eng.github.io/Let-Us-Python-Book-/hk/chapter-2/">
+      
+      
+        <link rel="prev" href="../chapter-1/">
+      
+      
+        <link rel="next" href="../chapter-27.hk/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../joseph.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Chapter 2 - Let Us Python Book</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/social-card.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-1-introduction-to-python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Let Us Python Book" class="md-header__button md-logo" aria-label="Let Us Python Book" data-md-component="logo">
+      
+  <img src="../../joseph.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Let Us Python Book
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Joseph1997-eng/Let-Us-Python-Book-" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Let-Us-Python-Book-
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../index.eng/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🇬🇧 English
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../index.mm/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🇲🇲 Myanmar
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../index.hk/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🦜 Hakha Chin
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../print_page/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Print this page
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Let Us Python Book" class="md-nav__button md-logo" aria-label="Let Us Python Book" data-md-component="logo">
+      
+  <img src="../../joseph.png" alt="logo">
+
+    </a>
+    Let Us Python Book
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Joseph1997-eng/Let-Us-Python-Book-" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Let-Us-Python-Book-
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇬🇧 English
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🇬🇧 English
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.eng/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eng/chapter-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eng/chapter-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eng/chapter-27.eng/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🇲🇲 Myanmar
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🇲🇲 Myanmar
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.mm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mm/chapter-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mm/chapter-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mm/chapter-27.mm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🦜 Hakha Chin
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🦜 Hakha Chin
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.hk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#keynote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keynote
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keynote">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-python-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Python Specification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-windows-cung-ah-python-installation-tuah-ning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Windows Cung Ah Python Installation Tuah Ning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-linux-cung-ah-python-installation-tuah-ning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Linux Cung Ah Python Installation Tuah Ning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-python-resources-bawmtu-thilri-pawl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Python Resources (Bawmtu Thilri Pawl)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-third-party-packages-midang-tuah-mi-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Third-party Packages (Midang Tuah Mi Packages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-python-packages-le-development-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6 Python Packages Le Development Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-python-version-cheknak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7 Python Version Cheknak
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exerciese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exerciese
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-27.hk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print this page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#keynote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keynote
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keynote">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-python-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Python Specification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-windows-cung-ah-python-installation-tuah-ning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Windows Cung Ah Python Installation Tuah Ning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-linux-cung-ah-python-installation-tuah-ning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Linux Cung Ah Python Installation Tuah Ning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-python-resources-bawmtu-thilri-pawl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Python Resources (Bawmtu Thilri Pawl)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-third-party-packages-midang-tuah-mi-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Third-party Packages (Midang Tuah Mi Packages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-python-packages-le-development-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6 Python Packages Le Development Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-python-version-cheknak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7 Python Version Cheknak
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exerciese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exerciese
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../index.hk/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    🦜 Hakha Chin
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/Joseph1997-eng/Let-Us-Python-Book-/edit/master/docs/hk/chapter-2.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/Joseph1997-eng/Let-Us-Python-Book-/raw/master/docs/hk/chapter-2.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="chapter-1-introduction-to-python">Chapter 1 Introduction To Python<a class="headerlink" href="#chapter-1-introduction-to-python" title="Permanent link">&para;</a></h1>
+<div class="chapter-social-card">
+  <div class="chapter-info">
+    <div class="chapter-number">CHAPTER 2</div>
+    <h1 class="chapter-title">Getting Started</h1>
+  </div>
+  <div class="chapter-logo">
+    <img src="/Let-Us-Python-Book-/Logo.png" alt="Joseph Logo">
+  </div>
+  <div class="chapter-social-links">
+    <a href="https://github.com/Joseph1997-eng" target="_blank" class="social-icon" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/robinson-joseph-61734a17a/" target="_blank" class="social-icon" title="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/josephsaimonn" target="_blank" class="social-icon" title="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<h2 id="keynote">Keynote<a class="headerlink" href="#keynote" title="Permanent link">&para;</a></h2>
+<h3 id="11-python-specification">1.1 <strong>Python Specification</strong><a class="headerlink" href="#11-python-specification" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Python</strong> cu <strong>language</strong> (computer holh) caah <strong>specification</strong> (tial ning phunglam) a si i, lam phunphun in <strong>implemented</strong> (tuah/hman) khawh a si. Holh phunphun in tial mi hi <strong>specification</strong> i <strong>implementations</strong> tampi a um.</p>
+</li>
+<li>
+<p>A lar mi <strong>Python implementations</strong> pawl cu:</p>
+</li>
+<li><strong>CPython</strong> - hi zohchunh awk <strong>implementation</strong> a si, <strong>C</strong> in tial a si.</li>
+<li><strong>PyPy</strong> - <strong>Python language</strong> i a hmete a simi <strong>RPython</strong> in tial a si.</li>
+<li><strong>Jython</strong> - <strong>Java</strong> in tial a si.</li>
+<li>
+<p><strong>IronPython</strong> - <strong>C#</strong> in tial a si.</p>
+</li>
+<li>
+<p>Hi <strong>implementations</strong> dihlak hi <strong>compilers</strong> an si i <strong>interpreters</strong> zong an si fawn. <strong>Compiler</strong> nih <strong>Python program</strong> kha a lailing a simi <strong>bytecode</strong> ah a thlen (<strong>converts</strong>). Mah <strong>bytecode</strong> cu <strong>interpreter</strong> nih a leh (<strong>interpreted</strong>) ṭhan.</p>
+</li>
+</ul>
+<hr />
+<h3 id="12-windows-cung-ah-python-installation-tuah-ning">1.2 <strong>Windows</strong> Cung Ah <strong>Python Installation</strong> Tuah Ning<a class="headerlink" href="#12-windows-cung-ah-python-installation-tuah-ning" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Python</strong> cu kum tampi chung a ṭhangcho ve. Hi <strong>edition</strong> (cauk) ṭial lio i a thar bik <strong>version</strong>, <strong>Windows</strong> le <strong>Linux</strong> caah <strong>Python 3.14.1</strong> a si.</p>
+</li>
+<li>
+<p><strong>Python</strong> cu <strong>Windows OS</strong> ah aa tel chih lo. Cucaah a dang tein <strong>install</strong> tuah a hau. Mah caah cun <a href="http://www.python.org/downloads/">www.python.org/downloads/</a> in <strong>Python installer</strong> kha <strong>download</strong> tuah a hau.</p>
+</li>
+<li>
+<p><strong>Download</strong> na tuah tik ah, na hmanmi computer cu <strong>32-bit machine</strong> a si maw <strong>64-bit machine</strong> a si maw timi cung ah hngat in <strong>installer</strong> aa tlak mi thim ding a si:</p>
+</li>
+<li><strong>64-bit machine</strong>: <strong>Windows x86-64 executable installer</strong> kha <strong>download</strong> tuah.</li>
+<li>
+<p><strong>32-bit machine</strong>: <strong>Windows x86 executable installer</strong> kha <strong>download</strong> tuah.</p>
+</li>
+<li>
+<p><strong>Installer</strong> na thim i <strong>download</strong> na tuah dih in, <strong>file</strong> kha hmeh-hnih (<strong>double-clicking</strong>) in tuahter/on. <em>Figure 2.1</em> ah langhter mi <strong>dialog</strong> (cakuang) kha screen cung ah a lang lai.  <img alt="Fig 2.1 Python 3.14.1 Installer Screen" src="../../assests/fig%2021.png" /></p>
+</li>
+<li>
+<p>Mah <strong>dialog</strong> chung ah, <strong>interpreter</strong> kha na <strong>execution path</strong> chung ah a um nakhnga, '<strong>Add Python 3.14 to PATH</strong>' asiloah '<strong>Add python.exe to PATH</strong>' timi <strong>check box</strong> (kakuang te) kha hmanh-thut (<strong>check</strong>) tuah ding a biapi tuk.</p>
+</li>
+<li>
+<p>'<strong>Install Now</strong>' kha hmet law minit tlawmpal chung ah <strong>installation</strong> cu a tlamtling lai. <strong>Python files</strong> pawl cu a tanglei <strong>directory</strong> (hmun) ah <strong>install</strong> tuah an si lai: <code>C:\Users\Joseph\AppData\Local\Programs\Python\Python314</code></p>
+</li>
+<li>
+<p>Hi <strong>path</strong> chung i ‘<strong>Joseph</strong>’ timi cu <strong>user name</strong> (hman tu min) a si i ‘<strong>Python314</strong>’ timi cu na <strong>download</strong> i <strong>install</strong> tuah mi <strong>Python installation</strong> i a <strong>version number</strong> a si.</p>
+</li>
+<li>
+<p><strong>Check box</strong> kha hmanh-thut na philh sual a si ahcun, a cunglei i langhter mi <strong>path</strong> kha <strong>Control Panel</strong> | <strong>System</strong> | <strong>Environment Variables</strong> | <strong>Edit</strong> hmang in <strong>PATH variable</strong> ah na chap khawh. <strong>PATH variable</strong> chung ah <strong>values</strong> tampi <strong>semicolon</strong> (;) in ṭhen in an um cia. A cunglei <strong>path</strong> kha a um cia mi <strong>values</strong> hnu ah va chap.</p>
+</li>
+<li>
+<p><strong>Installation</strong> a dih tik ah, <strong>command prompt</strong> on in <strong>python --version</strong> tiah type tuah law na chek khawh.</p>
+</li>
+<li>
+<p><strong>Installation</strong> a tlam a tlin ahcun, na system chung i <strong>install</strong> tuah mi <strong>Python</strong> i a version na hmuh lai.</p>
+</li>
+<li>
+<p><strong>Windows 10</strong> na hman a si ahcun, <strong>Settings</strong> &gt; <strong>Apps</strong> &gt; <strong>Apps &amp; features</strong> &gt; <strong>Python</strong> ah kal in <strong>installation</strong> kha na chek khawh.</p>
+</li>
+<li>
+<p><strong>Windows 11</strong> na hman a si ahcun, <strong>Settings</strong> &gt;<strong>Apps</strong> &gt; <strong>Apps &amp; features</strong> &gt; <strong>Python</strong> ah kal in <strong>installation</strong> kha na chek khawh.</p>
+</li>
+</ul>
+<hr />
+<h3 id="13-linux-cung-ah-python-installation-tuah-ning">1.3 <strong>Linux</strong> Cung Ah <strong>Python Installation</strong> Tuah Ning<a class="headerlink" href="#13-linux-cung-ah-python-installation-tuah-ning" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Linux distributions</strong> a tam deuh (tahchunhnak ah <strong>Ubuntu</strong>) ah cun <strong>Python</strong> a um cia. Asinain, a um cia mi <strong>Python version</strong> cu a thar bik a si lo kho men. A tanglei bantuk in <strong>version</strong> na chek khawh:</p>
+<div class="language-bash highlight"><span class="filename">Check Python Version</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>--version
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Version</strong> cu a thar bik a si lo tiah na hmuh ahcun, <strong>command</strong> hmang in a thar bik <strong>version</strong> (tahchunhnak ah <strong>Python 3.13</strong>) kha install na tuah khawh:</p>
+<div class="language-bash highlight"><span class="filename">Install Python</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3.13
+</span></code></pre></div>
+</li>
+</ul>
+<hr />
+<h3 id="14-python-resources-bawmtu-thilri-pawl">1.4 <strong>Python Resources</strong> (Bawmtu Thilri Pawl)<a class="headerlink" href="#14-python-resources-bawmtu-thilri-pawl" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Python source code</strong>, <strong>binaries</strong> le <strong>documentation</strong> (fianternak cauk) pawl cu a tanglei ah hmuh khawh an si:</li>
+<li><strong>Python official website</strong>: <a href="http://www.python.org">www.python.org</a></li>
+<li>
+<p><strong>Documentation website</strong>: <a href="http://www.python.org/doc">www.python.org/doc</a></p>
+</li>
+<li>
+<p><strong>Python</strong> in <strong>Program development</strong> (Program sernak) cu lam 3 in tuah khawh a si:</p>
+</li>
+<li>Built-in <strong>IDLE</strong> hman in.</li>
+<li><strong>Third-party IDEs</strong> (Midang tuah mi IDE) hman in.</li>
+<li>
+<p><strong>Online Python shells</strong> hman in.</p>
+</li>
+<li>
+<p><strong>Third-party development tools</strong> le download tuah khawhnak links pawl cu a tanglei ah pek an si:</p>
+</li>
+<li><strong>NetBeans IDE for Python</strong>: <a href="https://netbeans.apache.org/front/main/download/">https://netbeans.apache.org/front/main/download/</a></li>
+<li><strong>PyCharm IDE for Python</strong>: <a href="https://www.jetbrains.com/pycharm">https://www.jetbrains.com/pycharm</a></li>
+<li>
+<p><strong>Visual Studio Code IDE</strong>: <a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a></p>
+</li>
+<li>
+<p><strong>Python development tool</strong> na computer ah install tuah na duh lo ahcun, a tanglei <strong>online Python shells</strong> pawl hi na hman khawh hna:</p>
+</li>
+<li><a href="https://www.python.org/shell/">https://www.python.org/shell/</a></li>
+<li><a href="https://ideone.com/">https://ideone.com/</a></li>
+<li><a href="https://replit.com/languages/python3">https://replit.com/languages/python3</a></li>
+</ul>
+<hr />
+<h3 id="15-third-party-packages-midang-tuah-mi-packages">1.5 <strong>Third-party Packages</strong> (Midang Tuah Mi Packages)<a class="headerlink" href="#15-third-party-packages-midang-tuah-mi-packages" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Python community</strong> chung i <strong>Pythonistas</strong> pawl nih <strong>packages</strong> (<strong>libraries</strong>) an ser i <strong>programmers</strong> dang hman khawh dingin an chiah. An <strong>packages</strong> ṭhenhnak caah <strong>PyPI</strong>—<strong>Python Package Index</strong> (<a href="http://www.pypi.org">www.pypi.org</a>) an hmang.</p>
+</li>
+<li>
+<p><strong>PyPI</strong> nih <strong>third-party Python packages</strong> hmuh khawh mi cazin a ngei/kilkawicawi.</p>
+</li>
+<li>
+<p>Thil tuahnak ding caah a herh mi <strong>third-party packages</strong> a phunphun a um. <strong>Data Science applications</strong> sernak caah hman tawn mi <strong>packages</strong> cheukhat cu:</p>
+</li>
+<li><strong>NumPy</strong>: <strong>Mathematical operations</strong> a sang mi tuahnak caah le <strong>multi-dimensional arrays</strong> le <strong>matrices</strong> ngan pipi support tuahnak caah a si.</li>
+<li><strong>SciPy</strong>: <strong>Scientific computing library</strong> a si i <strong>optimization</strong>, <strong>integration</strong>, <strong>interpolation</strong>, <strong>signal processing</strong>, <strong>image processing</strong>, tbk. caah hman a si.</li>
+<li><strong>Pandas</strong>: <strong>Numerical tables</strong> le <strong>time series</strong> tawlrelnak caah <strong>Library</strong> a si.</li>
+<li><strong>MatPlotLib</strong>: <strong>2D</strong> le <strong>3D Data visualization library</strong> (Data hmanthlak in langhternak) a si.</li>
+<li><strong>OpenCV</strong>: <strong>Open source Computer vision library</strong> a si.</li>
+</ul>
+<h3 id="16-python-packages-le-development-tools">1.6 <strong>Python Packages</strong> Le <strong>Development Tools</strong><a class="headerlink" href="#16-python-packages-le-development-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Nangmah zong <strong>PyPI</strong> ah register na tuah kho i na <strong>packages</strong> pawl na upload khawh ve. <strong>Package</strong> ser ning, build tuah ning le <strong>Python Package Index</strong> ah upload tuah ning kong he pehtlai in <a href="http://www.pypi.org">www.pypi.org</a> ah lam hmuhsaknak an pek mi na zulh a hau.</p>
+</li>
+<li>
+<p><strong>pip</strong> cu <strong>PyPI</strong> in <strong>packages</strong> install tuahnak caah hman tawn mi <strong>tool</strong> a si. <strong>Python</strong> na install tik ah hi <strong>tool</strong> hi amah tein a ra chih.</p>
+</li>
+</ul>
+<h4 id="161-data-science-le-ai-tools">1.6.1 <strong>Data Science</strong> Le <strong>AI Tools</strong><a class="headerlink" href="#161-data-science-le-ai-tools" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Python programmers</strong> pawl <strong>Data Science</strong> le <strong>Artificial Intelligence applications</strong> sernak le document tuahnak ah bawmtu ding <strong>tools</strong> tampi a um. Cu hna cu:</li>
+<li><strong>Jupyter Notebook</strong> - Hi <strong>tool</strong> cu <strong>browser</strong> cung ah hman khawh mi a si i <strong>Python</strong> (le languages dang) he hman ṭi khawh a si. <strong>Python code</strong>, <strong>code</strong> nih a chuah mi <strong>output</strong> le <strong>visualization</strong> asiloah <strong>plot</strong> tbk. pawl kha <strong>Notebook</strong> tiah auh mi document pakhat chung ah chiah ṭi a ngah. <strong>Modular program development</strong> tuahnak caah <strong>tool</strong> ṭha taktak a si.</li>
+<li><strong>Google Colab</strong> - Hi <strong>tool</strong> nih <strong>Google's cloud servers</strong> cung ah <strong>code</strong> execute (tuahter) nak ding caah <strong>Jupyter notebook environment</strong> kha a man pek hau lo in a pek. Cucaah, <strong>Google's hardware</strong> ṭhawnnak kha na hmang kho.</li>
+<li>
+<p><strong>Spyder</strong> - Hi <strong>tool</strong> nih <strong>Scientific Python Development Environment</strong> kha <strong>testing</strong> le <strong>debugging features</strong> a ṭha mi he a pek.</p>
+</li>
+<li>
+<p><strong>Jupyter</strong> le <strong>Spyder</strong> cu <strong>Anaconda</strong> tiah auh mi <strong>software distribution</strong> a lar taktak mi chung i a tel mi an si. Cucaah <strong>Anaconda</strong> na download i install na tuah ahcun, <strong>Jupyter</strong> le <strong>Spyder</strong> kha a ready in na hmuh colh lai.</p>
+</li>
+</ul>
+<h4 id="162-idle-integrated-development-and-learning-environment">1.6.2 <strong>IDLE</strong> (Integrated Development and Learning Environment)<a class="headerlink" href="#162-idle-integrated-development-and-learning-environment" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Python</strong> install na tuah dih in, amah he a ra chih mi <strong>Python Integrated Development and Learning Environment</strong> (<strong>IDLE</strong>) hmang in <strong>program development</strong> tuah khawh a si.</p>
+</li>
+<li>
+<p><strong>IDLE</strong> cu <strong>development tool</strong> ṭha a si. Amah nih <strong>syntax highlighting</strong>, <strong>context-sensitive help</strong> le <strong>debugging</strong> tbk. features ṭha a ngei.</p>
+</li>
+<li><strong>Syntax highlighting</strong> feature nih <strong>keywords</strong>, <strong>functions</strong>, <strong>methods</strong> le <strong>strings</strong> pawl kha a color (muizawng) a dang cio in a langhter hna caah hngalh an fawi.</li>
+<li><strong>Context-sensitive help</strong> cu <strong>program</strong> na ṭial lio ah bawmhnak na herhnak zawn paoh ah <strong>Ctrl + Space</strong> hmeh in hmuh khawh a si. <strong>Functions</strong>, <strong>methods</strong> le an <strong>parameters</strong> min dihlak cinken dih ding a har tuk caah hi feature hi a ṭhahnem tuk.</li>
+<li><strong>Debugger</strong> nih <strong>program</strong> a kal ning (<strong>flow of execution</strong>) a zulh (trace) i na <strong>program</strong> chung i <strong>logical errors</strong> (palhnak) um mi kawl khawhnak a pek. Hi <strong>tracing</strong> cu <strong>break points</strong> chiah in le <strong>single stepping</strong> (kar khat hnu kar khat) in tuah khawh a si. Cuti na tuah lio ah <strong>IDLE</strong> nih <strong>execution</strong> a kal lio i <strong>variables</strong> values aa thlen ning pawl a langhter.</li>
+</ul>
+<h4 id="163-python-modes">1.6.3 <strong>Python Modes</strong><a class="headerlink" href="#163-python-modes" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Python</strong> cu <strong>modes</strong> (lam) pahnih in hman khawh a si:</li>
+<li><strong>Interactive mode</strong> - <strong>Python syntax</strong> hlathlai nak, bawmhnak hal nak le <strong>programs</strong> tawi te <strong>debug</strong> tuahnak caah hman a si.</li>
+<li>
+<p><strong>Script mode</strong> - <strong>Python programs</strong> a tling mi ṭialnak caah hman a si.</p>
+</li>
+<li>
+<p>Hi <strong>modes</strong> pahnih hi <strong>IDLE</strong> nih a support.</p>
+</li>
+</ul>
+<h5 id="1631-idle-kha-interactive-mode-in-hman-ning"><strong>1.6.3.1 IDLE Kha Interactive Mode In Hman Ning:</strong><a class="headerlink" href="#1631-idle-kha-interactive-mode-in-hman-ning" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Windows</strong> ah <strong>IDLE</strong> tiah <strong>Windows search bar</strong> ah ṭial in kawl law enter hmet, asiloah <strong>IDLE icon</strong> kha double click tuah.</li>
+<li><code>&gt;&gt;&gt;</code> <strong>Python shell prompt</strong> a um mi <strong>Python shell window</strong> a hong lai.</li>
+<li>
+<p>A tanglei <strong>Python code</strong> hi <strong>prompt</strong> ah khan execute (tuahter) tuah.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Keep calm and bubble on&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>'Keep calm and bubble on' timi message kha <code>&gt;&gt;&gt;</code> <strong>prompt</strong> hnu ah a langhter lai.</p>
+</li>
+</ul>
+<h5 id="1632-idle-kha-script-mode-in-hman-ning"><strong>1.6.3.2 IDLE Kha Script Mode In Hman Ning:</strong><a class="headerlink" href="#1632-idle-kha-script-mode-in-hman-ning" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>IDLE</strong> kha on (Launch). <strong>IDLE shell window</strong> chung i <strong>menu</strong> in <strong>File</strong> | <strong>New File</strong> kha thim. Window thar a hong lai. A tanglei <strong>script</strong> hi ṭial:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Those who can</span><span class="se">\&#39;</span><span class="s1">t laugh at themselves…&#39;</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;leave the job to others.&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>File</strong> | <strong>Save</strong> kha hmang law <strong>script</strong> kha '<strong>Test.py</strong>' tiah min pek in save tuah.</p>
+</li>
+<li><strong>Run menu</strong> hmang in asiloah <strong>F5</strong> hmeh in <strong>script</strong> kha execute tuah. Message pahnih kha a print lai.</li>
+</ul>
+<h5 id="1633-other-ides-hmannak"><strong>1.6.3.3 Other IDEs Hmannak</strong><a class="headerlink" href="#1633-other-ides-hmannak" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>IDLE</strong> hman lo in <strong>NetBeans</strong> asiloah <strong>Visual Studio Code</strong> hman na duh ahcun a tanglei steps hi zul:</li>
+<li><strong>Python project</strong> thar ‘<strong>Test</strong>’ tiah min pek in ser law.</li>
+<li><strong>Script</strong> kha <strong>Test.py</strong> chung ah ṭial.</li>
+<li><strong>NetBeans</strong> ah <strong>F6</strong> asiloah <strong>Visual Studio Code</strong> ah <strong>Ctrl + F5</strong> hmang in <strong>script</strong> kha execute tuah.</li>
+<li><strong>Execution</strong> a tuah tik ah catlang pahnih kha a print lai, cun <strong>project</strong> thar le <strong>script</strong> thar ser ding in a ready lai.</li>
+</ul>
+<h3 id="17-python-version-cheknak">1.7 <strong>Python Version</strong> Cheknak<a class="headerlink" href="#17-python-version-cheknak" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Python</strong> cu kum tampi chung a ṭhangcho. Na machine cung i install tuah mi <strong>version</strong> kha <strong>Python script</strong> tawi te hmang in na hngalh khawh:</li>
+</ul>
+<div class="language-python highlight"><span class="filename">Check Python Version</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="exerciese"><strong>Exerciese</strong><a class="headerlink" href="#exerciese" title="Permanent link">&para;</a></h3>
+<p><strong>[A] A tanglei biahalnak hna hi phi tuah:</strong></p>
+<ul>
+<li>a. <code>C:\&gt;</code>, <code>$</code>, le <code>&gt;&gt;&gt;</code> prompts pawl nih zeidah an langhter (signify)?</li>
+<li>b. <strong>IDLE</strong> cu zei modes (lam) pahnih in dah hman khawh a si?</li>
+<li>c. <strong>IDLE</strong> nih a pek mi programming modes pahnih hna i an hman-hnawhchan (purpose) cu zei dah a si?</li>
+<li>d. Third-party libraries pawl cu Python Program nih zeitin dah hman khawh an si?</li>
+</ul>
+<p><strong>[B] A tanglei pawl hi a kop in thleidan tuah (Match the following pairs):</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Section A</th>
+<th style="text-align: left;">Section B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">a. <code>pip</code></td>
+<td style="text-align: left;">1. <strong>Mathematical operations</strong> le <strong>matrices</strong> caah.</td>
+</tr>
+<tr>
+<td style="text-align: left;">b.<code>CPython</code></td>
+<td style="text-align: left;">2. Scientific Python Development Environment** a si caah <em>Scientific Computing</em> he aa tlak bik.</td>
+</tr>
+<tr>
+<td style="text-align: left;">c. <code>Spyder</code></td>
+<td style="text-align: left;">3.<strong>Numerical tables</strong> le <strong>time series</strong> tawlrelnak.</td>
+</tr>
+<tr>
+<td style="text-align: left;">d.<code>PyPI</code></td>
+<td style="text-align: left;">4. <strong>2D</strong> le <strong>3D Data visualization</strong> (Data hmanthlak in langhter).</td>
+</tr>
+<tr>
+<td style="text-align: left;">e.<code>NumPy</code></td>
+<td style="text-align: left;">5. <strong>Computer vision library</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">f.<code>SciPy</code></td>
+<td style="text-align: left;">6. <strong>PyPI</strong> in packages install tuahnak hriamnam.</td>
+</tr>
+<tr>
+<td style="text-align: left;">g.<code>Pandas</code></td>
+<td style="text-align: left;">7. <strong>Code</strong> le <strong>visualization</strong> tial ṭi nak document sernak.</td>
+</tr>
+<tr>
+<td style="text-align: left;">h.<code>MatPlotlib</code></td>
+<td style="text-align: left;">8. <strong>Scientific computing library</strong> a si.</td>
+</tr>
+<tr>
+<td style="text-align: left;">i.<code>OpenCV</code></td>
+<td style="text-align: left;">9.<strong>Third-party packages</strong> ṭhenhnak hmun.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Answers</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Section A</th>
+<th style="text-align: left;">Section B (A Phi)</th>
+<th style="text-align: left;">A Sullam (Reference)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">a. <code>pip</code></td>
+<td style="text-align: left;"><strong>6. Package installation tool</strong></td>
+<td style="text-align: left;"><strong>PyPI</strong> in packages install tuahnak hriamnam.</td>
+</tr>
+<tr>
+<td style="text-align: left;">b. <code>Jupyter</code></td>
+<td style="text-align: left;"><strong>7. Build and document applications</strong></td>
+<td style="text-align: left;"><strong>Code</strong> le <strong>visualization</strong> tial ṭi nak document sernak.</td>
+</tr>
+<tr>
+<td style="text-align: left;">c. <code>Spyder</code></td>
+<td style="text-align: left;"><strong>2. Scientific Computing</strong></td>
+<td style="text-align: left;"><strong>Scientific Python Development Environment</strong> a si caah <em>Scientific Computing</em> he aa tlak bik.</td>
+</tr>
+<tr>
+<td style="text-align: left;">d. <code>PyPI</code></td>
+<td style="text-align: left;"><strong>9. Python Package index</strong></td>
+<td style="text-align: left;"><strong>Third-party packages</strong> ṭhenhnak hmun.</td>
+</tr>
+<tr>
+<td style="text-align: left;">e. <code>NumPy</code></td>
+<td style="text-align: left;"><strong>1. Advanced mathematical operations</strong></td>
+<td style="text-align: left;"><strong>Mathematical operations</strong> le <strong>matrices</strong> caah.</td>
+</tr>
+<tr>
+<td style="text-align: left;">f. <code>SciPy</code></td>
+<td style="text-align: left;"><strong>8. Scientific Library</strong></td>
+<td style="text-align: left;"><strong>Scientific computing library</strong> a si.</td>
+</tr>
+<tr>
+<td style="text-align: left;">g. <code>Pandas</code></td>
+<td style="text-align: left;"><strong>3. Manipulation numerical tables</strong></td>
+<td style="text-align: left;"><strong>Numerical tables</strong> le <strong>time series</strong> tawlrelnak.</td>
+</tr>
+<tr>
+<td style="text-align: left;">h. <code>MatPlotlib</code></td>
+<td style="text-align: left;"><strong>4. Visualization</strong></td>
+<td style="text-align: left;"><strong>2D</strong> le <strong>3D Data visualization</strong> (Data hmanthlak in langhter).</td>
+</tr>
+<tr>
+<td style="text-align: left;">i. <code>OpenCV</code></td>
+<td style="text-align: left;"><strong>5. Computer Vision</strong></td>
+<td style="text-align: left;"><strong>Computer vision library</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>[C] A tanglei bia hna hi a Hmaan (True) le a Hmaan lo (False) chim tuah:</strong></p>
+<ul>
+<li><strong>a.</strong> Python cu specification a si i <strong>Python</strong> (PyPy), <strong>C#</strong> (IronPython), <strong>Java</strong> (Jython), tbk. hmang in implementation tuah khawh a si.</li>
+<li>
+<p><strong>A Phi:</strong> <strong>True</strong> (Hmaan).</p>
+</li>
+<li>
+<p><strong>b.</strong> <strong>CPython</strong> cu <strong>Python</strong> specification i implementation a si i, <strong>C</strong> in ṭial a si.</p>
+</li>
+<li>
+<p><strong>A Phi:</strong> <strong>True</strong> (Hmaan).</p>
+</li>
+<li>
+<p><strong>c.</strong> Python program cu <strong>byte code</strong> ah compile tuah hmasa a si i, cu hnu ah interpreted (leh) a si.</p>
+</li>
+<li>
+<p><strong>A Phi:</strong> <strong>True</strong> (Hmaan).</p>
+</li>
+<li>
+<p><strong>d.</strong> <strong>Linux</strong> distributions a tam deuh nih <strong>Python</strong> an ngei cia.</p>
+</li>
+<li>
+<p><strong>A Phi:</strong> <strong>True</strong> (Hmaan).</p>
+</li>
+<li>
+<p><strong>e.</strong> Windows system nih Python a ngei lo i a dang tein install tuah a hau.</p>
+</li>
+<li>
+<p><strong>A Phi:</strong> <strong>True</strong> (Hmaan).</p>
+</li>
+<li>
+<p><strong>f.</strong> Python programs pawl cu <strong>IDLE</strong>, <strong>Netbeans</strong>, <strong>PyCharm</strong> le <strong>Visual Studio Code</strong> hmang in ser khawh a si.</p>
+</li>
+<li>
+<p><strong>A Phi:</strong> <strong>True</strong> (Hmaan).</p>
+</li>
+<li>
+<p><strong>g.</strong> Third-party Python packages pawl cu <strong>PyPI</strong> hmang in ṭhenh (distributed) an si.</p>
+</li>
+<li><strong>A Phi:</strong> <strong>True</strong> (Hmaan).</li>
+</ul>
+<hr />
+<div class="comments-section">
+  <h2 class="comments-title">💬 Comments & Discussion</h2>
+  <script src="https://giscus.app/client.js"
+        data-repo="Joseph1997-eng/Let-Us-Python-Book-"
+        data-repo-id="R_kgDOQfXjHg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQfXjHs4CzbEE"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+  </script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../chapter-1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chapter 1">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Chapter 1
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../chapter-27.hk/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 27">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Chapter 27
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Joseph
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/Joseph1997-eng" target="_blank" rel="noopener" title="Joseph&#39;s GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/robinson-joseph-61734a17a/" target="_blank" rel="noopener" title="Joseph&#39;s LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.facebook.com/josephsaimonn" target="_blank" rel="noopener" title="Joseph&#39;s Facebook" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:josephsaimonn@gmail.com" target="_blank" rel="noopener" title="Email Joseph" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.python.org" target="_blank" rel="noopener" title="Python Official" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+        <script src="../../javascripts/social-share.js"></script>
+      
+    
+  </body>
+</html>

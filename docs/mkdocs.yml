@@ -138,10 +138,16 @@ nav:
   - Home: index.md
   - '🇬🇧 English':
     - 'Home': index.eng.md
+    - 'Chapter 1': eng/chapter-1.md
+    - 'Chapter 2': eng/chapter-2.md
     - 'Chapter 27': eng/chapter-27.eng.md
   - '🇲🇲 Myanmar':
     - 'Home': index.mm.md
+    - 'Chapter 1': mm/chapter-1.md
+    - 'Chapter 2': mm/chapter-2.md
     - 'Chapter 27': mm/chapter-27.mm.md
   - '🦜 Hakha Chin':
     - 'Home': index.hk.md
+    - 'Chapter 1': hk/chapter-1.md
+    - 'Chapter 2': hk/chapter-2.md
     - 'Chapter 27': hk/chapter-27.hk.md

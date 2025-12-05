@@ -16,22 +16,22 @@ Whether you're taking your first steps in programming or looking to deepen your 
 
 This comprehensive guide covers everything from fundamentals to advanced concepts:
 
-*   **Core Fundamentals**: Master variables, data types, loops, and functions
-*   **Data Structures & Algorithms**: Build efficient solutions with Python's powerful data structures
-*   **Object-Oriented Programming**: Dive deep into classes, inheritance, polymorphism, and design patterns
-*   **File Handling & Exceptions**: Learn robust error handling and file operations
-*   **Advanced Python Concepts**: Explore decorators, generators, context managers, and more
-*   **Data Science with NumPy**: High-performance scientific computing (Chapter 27)
-*   **Modern Best Practices**: Write clean, efficient, and Pythonic code
+* **Core Fundamentals**: Master variables, data types, loops, and functions
+* **Data Structures & Algorithms**: Build efficient solutions with Python's powerful data structures
+* **Object-Oriented Programming**: Dive deep into classes, inheritance, polymorphism, and design patterns
+* **File Handling & Exceptions**: Learn robust error handling and file operations
+* **Advanced Python Concepts**: Explore decorators, generators, context managers, and more
+* **Data Science with NumPy**: High-performance scientific computing (Chapter 27)
+* **Modern Best Practices**: Write clean, efficient, and Pythonic code
 
 ## 📚 Repository Contents
 
 This repository provides a rich learning experience through:
 
-- **Interactive Jupyter Notebooks**: Hands-on chapters with executable code examples
-- **Chapter-wise Organization**: Structured progression through Python concepts
-- **Practical Examples**: Real-world code snippets and exercises
-- **Clear Explanations**: Detailed commentary and concept breakdowns
+* **Interactive Jupyter Notebooks**: Hands-on chapters with executable code examples
+* **Chapter-wise Organization**: Structured progression through Python concepts
+* **Practical Examples**: Real-world code snippets and exercises
+* **Clear Explanations**: Detailed commentary and concept breakdowns
 
 ### Available Chapters
 
@@ -45,29 +45,31 @@ This repository provides a rich learning experience through:
 
 This repository is perfect for:
 
-- 🌱 **Beginners** starting their Python programming journey
-- 🎓 **Students** seeking to strengthen their Python fundamentals
-- 💼 **Developers** preparing for technical interviews
-- 🔄 **Career Switchers** looking for structured, chapter-based learning materials
-- 🚀 **Enthusiasts** who want to build real-world projects with Python
+* 🌱 **Beginners** starting their Python programming journey
+* 🎓 **Students** seeking to strengthen their Python fundamentals
+* 💼 **Developers** preparing for technical interviews
+* 🔄 **Career Switchers** looking for structured, chapter-based learning materials
+* 🚀 **Enthusiasts** who want to build real-world projects with Python
 
 ## 🛠️ Getting Started
 
 ### Prerequisites
 
-- Python 3.7 or higher
-- Jupyter Notebook
-- Basic understanding of programming concepts (helpful but not required)
+* Python 3.7 or higher
+* Jupyter Notebook
+* Basic understanding of programming concepts (helpful but not required)
 
 ### Installation
 
-1.  **Clone the repository**
+1. **Clone the repository**
+
     ```bash
     git clone https://github.com/Joseph1997-eng/Let-Us-Python-Book-.git
     cd Let-Us-Python-Book-
     ```
 
-2.  **Install dependencies**
+2. **Install dependencies**
+
     ```bash
     # Install Jupyter Notebook
     pip install jupyter
@@ -79,15 +81,16 @@ This repository is perfect for:
     pip install mkdocs-material
     ```
 
-3.  **Launch Jupyter Notebook**
+3. **Launch Jupyter Notebook**
+
     ```bash
     jupyter notebook
     ```
 
-4.  **Navigate and Learn**
-    - Open chapter notebooks to explore specific topics
-    - Execute code cells to see examples in action
-    - Study explanations and concepts at your own pace
+4. **Navigate and Learn**
+    * Open chapter notebooks to explore specific topics
+    * Execute code cells to see examples in action
+    * Study explanations and concepts at your own pace
 
 ### View Online Documentation
 
@@ -96,20 +99,22 @@ Prefer reading online? Visit our beautifully formatted documentation site:
 🌐 **[https://Joseph1997-eng.github.io/Let-Us-Python-Book-/](https://Joseph1997-eng.github.io/Let-Us-Python-Book-/)**
 
 Or run the docs locally:
+
 ```bash
 mkdocs serve
 ```
+
 Then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
 
 ## 📘 About the Book
 
 **"Let Us Python"** is a comprehensive guide that has helped thousands of learners master Python programming. The 5th Edition covers modern Python practices and includes:
 
-- Clear, beginner-friendly explanations
-- Progressive difficulty levels
-- Extensive code examples
-- Practice exercises and challenges
-- Real-world application scenarios
+* Clear, beginner-friendly explanations
+* Progressive difficulty levels
+* Extensive code examples
+* Practice exercises and challenges
+* Real-world application scenarios
 
 **Original Authors**: Yashavant Kanetkar, Aditya Kanetkar  
 **Edition**: 5th Edition  
@@ -119,27 +124,27 @@ Then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
 
 Your contributions make this resource better for everyone! We welcome:
 
-- 📝 **Content Improvements**: Clarifications, additional examples, or corrections
-- 🐛 **Bug Reports**: Found an error? Let us know!
-- 💡 **Suggestions**: Ideas for new chapters or topics
-- 🌟 **Enhancements**: Better explanations or code optimizations
+* 📝 **Content Improvements**: Clarifications, additional examples, or corrections
+* 🐛 **Bug Reports**: Found an error? Let us know!
+* 💡 **Suggestions**: Ideas for new chapters or topics
+* 🌟 **Enhancements**: Better explanations or code optimizations
 
 **How to contribute:**
 
-1.  Fork the repository
-2.  Create a new branch (`git checkout -b feature/amazing-improvement`)
-3.  Make your changes
-4.  Commit with clear messages (`git commit -m "Add detailed explanation for decorators"`)
-5.  Push to your branch (`git push origin feature/amazing-improvement`)
-6.  Open a Pull Request
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-improvement`)
+3. Make your changes
+4. Commit with clear messages (`git commit -m "Add detailed explanation for decorators"`)
+5. Push to your branch (`git push origin feature/amazing-improvement`)
+6. Open a Pull Request
 
 ## 📞 Contact & Support
 
 Have questions or feedback? We'd love to hear from you!
 
-- 🐛 **Issues**: [Open an issue](https://github.com/Joseph1997-eng/Let-Us-Python-Book-/issues)
-- 💬 **Discussions**: Share your learning journey
-- 📧 **Repository**: [Let-Us-Python-Book-](https://github.com/Joseph1997-eng/Let-Us-Python-Book-)
+* 🐛 **Issues**: [Open an issue](https://github.com/Joseph1997-eng/Let-Us-Python-Book-/issues)
+* 💬 **Discussions**: Share your learning journey
+* 📧 **Repository**: [Let-Us-Python-Book-](https://github.com/Joseph1997-eng/Let-Us-Python-Book-)
 
 ## 📄 License
 
