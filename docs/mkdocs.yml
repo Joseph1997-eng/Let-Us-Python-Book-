@@ -61,6 +61,8 @@ extra_css:
 
 extra_javascript:
   - javascripts/social-share.js
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 # Plugins
 plugins:
@@ -113,6 +115,11 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
 
 # Social Links & Language Selector
 extra:
@@ -140,6 +147,7 @@ nav:
     - 'Home': index.eng.md
     - 'Chapter 1': eng/chapter-1.md
     - 'Chapter 2': eng/chapter-2.md
+    - 'Chapter 3': eng/chapter-3.md
     - 'Chapter 27': eng/chapter-27.eng.md
   - '🇲🇲 Myanmar':
     - 'Home': index.mm.md
