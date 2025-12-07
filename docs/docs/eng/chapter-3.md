@@ -390,7 +390,7 @@ Container types typically refer to multiple values stored together Examples of d
 # list is a indexed collection of similar/dissimilar entities
 [10, 20, 30, 20, 30, 40, 50, 10], ['She', 'sold', 10, 'shells'’]
 # tuple is an immutable collection
-('Sanjay', 34, 4500.55), ('Let Us Python', 350, 195.00)
+('Rosanna', 34, 4500.55), ('Let Us Python', 350, 195.00)
 # set is a collection of unique values
 {10, 20, 30, 40}, {'Rosanna', 34, 45000}
 # dict is a collection of key-value pairs, with unique key enclosed in 
@@ -659,6 +659,9 @@ True
 False
 ```
 </details>
+
+![Fig 3.1 Complex Number](../assests/complex%20number.jpg)
+
 
 !!! note "Tips"
     * % works on floats.
