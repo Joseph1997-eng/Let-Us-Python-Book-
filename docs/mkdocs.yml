@@ -152,7 +152,8 @@ nav:
   - '🇲🇲 Myanmar':
     - 'Home': index.mm.md
     - 'Chapter 1': mm/chapter-1.md
-    - 'Chapter 2': mm/chapter-2.md
+    - 'Chapter 2': mm/chapter-2.md\
+    - 'Chapter 3': mm/chapter-3.md
     - 'Chapter 27': mm/chapter-27.mm.md
   - '🦜 Hakha Chin':
     - 'Home': index.hk.md
