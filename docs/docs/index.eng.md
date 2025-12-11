@@ -153,10 +153,6 @@ Have questions or feedback? We'd love to hear from you!
 
 This repository is licensed under the **MIT License** - see the LICENSE file for details.
 
-## ⚠️ Disclaimer
-
-This repository contains educational materials derived from **"Let Us Python" (5th Edition)**. It is intended for learning purposes only. For the complete and original content, please refer to the official book by Yashavant Kanetkar and Aditya Kanetkar.
-
 ---
 
 **Happy Learning!** 🐍✨
